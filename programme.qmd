@@ -23,10 +23,10 @@
 
 | Date/Time                                 | Content                                                                                                                                      |
 |------------------------------------------|------------------------------|
-| <font color="teal">**Sun 6 July**</font>  |                                                                                                                                              |
+| <font color="teal">**Sun 24 May**</font>  |                                                                                                                                              |
 | 18:00-20:00                               | Registration & help desk                                                                                                                     |
 | 18:00-20:00                               | Get together with drinks                                                                                                                     |
-| <font color="teal">**Mon 7 July**</font>  |                                                                                                                                              |
+| <font color="teal">**Mon 25 May**</font>  |                                                                                                                                              |
 | 08:30-09:15                               | **Lecture:** Introduction to Bioconductor                                                                                                    |
 | 09:15-10:00                               | **Lecture:** What do we aim to measure and why: applications in transcriptomics                                                              |
 | 10:00-10:30                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
@@ -39,7 +39,7 @@
 | 16:00-17:00                               | **Lab continuation**                                                                                                                         |
 | 17:00-17:30                               | **Intro to Project Groups (optional)**                                                                                                       |
 | 20:10-22:00                               | **Evening session:** Drinks will be provided                                                                                                 |
-| <font color="teal">**Tue 8 July**</font>  |                                                                                                                                              |
+| <font color="teal">**Tue 26 May**</font>  |                                                                                                                                              |
 | 08:30-09:15                               | **Lecture:** RNA-Seq differential expression                                                                                                 |
 | 09:15-10:00                               | **Lecture:** Dimension reduction: PCA and other low-dimensional embeddings                                                                   |
 | 10:00-10:30                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
@@ -53,15 +53,15 @@
 | 16:00-17:00                               | **Lab continuation**                                                                                                                         |
 | 17:00-17:30                               | **Flashlight talks**                                                                                                                         |
 | 20:10-22:00                               | **Evening session:** Drinks will be provided                                                                                                 |
-| <font color="teal">**Wed 9 July**</font>  |                                                                                                                                              |
+| <font color="teal">**Wed 27 May**</font>  |                                                                                                                                              |
 | 08:30-09:15                               | **Lecture:** Distances, nearest-neighbour graphs and clustering                                                                              |
 | 09:15-10:00                               | **Lecture:** Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping                                                           |
 | 10:00-10:30                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
 | 10:30-11:15                               | **Lecture:** Multi-condition single cell RNA-seq II: when is the right time to categorize?                                                   |
 | 11:15-12:00                               | **Lecture:** Introduction to spatial omics                                                                                                   |
 | 12:00-14:00                               | *\~\~\~ Lunch break \~\~\~*                                                                                                                  |
-| 14:00-17:00                               | **Social Programme:** Excursion to the mountains and dinner. Photos: [By WH](https://photos.app.goo.gl/8SLt6fHGoGiTNEMT8) |
-| <font color="teal">**Thu 10 July**</font> |                                                                                                                                              |
+| 14:00-17:00                               | **Social Programme:** Excursion to the mountains and dinner. |
+| <font color="teal">**Thu 28 May**</font> |                                                                                                                                              |
 | 08:30-09:15                               | **Lecture:** Mass spectrometry-based proteomics including single-cell                                                                        |
 | 09:15-10:00                               | **Lecture:** Mass spectrometry-based metabolomics                                                                                            |
 | 10:00-10:30                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
@@ -79,7 +79,7 @@
 | 15:30-17:00                               | **Lab:** Interactive exploration with iSEE                                                                                                   |
 | 15:30-17:00                               | **Lab:** Working with Image Data                                                                                                             |
 | 17:00-17:30                               | **Flashlight talks**                                                                                                                         |
-| <font color="teal">**Fri 11 July**</font> |                                                                                                                                              |
+| <font color="teal">**Fri 29 May**</font> |                                                                                                                                              |
 | 08:30-09:15                               | **Lecture:** Design of High Throughput Experiments and their Analysis                                                                        |
 | 09:15-10:00                               | **Lecture:** Machine learning                                                                                                                |
 | 10:00-10:30                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
