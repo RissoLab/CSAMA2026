@@ -1,0 +1,534 @@
+[
+  {
+    "objectID": "installation.html",
+    "href": "installation.html",
+    "title": "R and RStudio setup:",
+    "section": "",
+    "text": "This page contains important instructions that you should follow before arriving at the course.\nDue to the limited Internet connectivity at the course venue, it is necessary that you install all required software on your laptop before arriving. Because of the range of topics covered in the course you will need to download a large number of packages, so it is really helpful to do this in advance. To do so, please follow these steps."
+  },
+  {
+    "objectID": "installation.html#install-docker",
+    "href": "installation.html#install-docker",
+    "title": "R and RStudio setup:",
+    "section": "1. Install Docker",
+    "text": "1. Install Docker\nIf you haven’t done so already, install Docker on your machine:\nhttps://docs.docker.com/engine/install/"
+  },
+  {
+    "objectID": "installation.html#download-the-required-docker-images",
+    "href": "installation.html#download-the-required-docker-images",
+    "title": "R and RStudio setup:",
+    "section": "2. Download the required Docker images",
+    "text": "2. Download the required Docker images\n\nSpatial Transcriptomics lab\n\nImage: robertclab/upf_mscbinf_ieo_spatialomics\nPull the image on your terminal:\n\ndocker pull robertclab/upf_mscbinf_ieo_spatialomics\n\nRun the container with the following command:\n\ndocker run -d -p 8787:8787 -e PASSWORD=ieo --rm robertclab/upf_mscbinf_ieo_spatialomics\nThen open the following link in your browser: https://localhost:8787\n\nUsername: rstudio\nPassword: ieo\n\n\n\nMetabolomics lab\n\nImage: rformassspectrometry/metabonaut:latest\nPull the image on your terminal:\n\ndocker pull rformassspectrometry/metabonaut:latest"
+  },
+  {
+    "objectID": "installation.html#in-case-of-errors",
+    "href": "installation.html#in-case-of-errors",
+    "title": "R and RStudio setup:",
+    "section": "In case of errors",
+    "text": "In case of errors\nIf you encounter any errors, please pay close attention to the messages displayed, they may contain further instructions.\nFor questions regarding software installation, please contact Ilaria Billato.\nWe also have a Slack channel for the course https://CSAMA2025.slack.com/ where you can ask support questions and meet fellow course participants."
+  },
+  {
+    "objectID": "lectures/day3.html",
+    "href": "lectures/day3.html",
+    "title": "Day 3",
+    "section": "",
+    "text": "Note\n\n\n\nWelcome to Day 3! Below you’ll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources."
+  },
+  {
+    "objectID": "lectures/day3.html#NNG",
+    "href": "lectures/day3.html#NNG",
+    "title": "Day 3",
+    "section": "📘 Distances, nearest-neighbour graphs and clustering",
+    "text": "📘 Distances, nearest-neighbour graphs and clustering\nMaterials coming soon."
+  },
+  {
+    "objectID": "lectures/day3.html#scRNA-adv",
+    "href": "lectures/day3.html#scRNA-adv",
+    "title": "Day 3",
+    "section": "📘 Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping",
+    "text": "📘 Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day3.html#scRNA-DEA",
+    "href": "lectures/day3.html#scRNA-DEA",
+    "title": "Day 3",
+    "section": "📘 Multi-condition single cell RNA-seq II: when is the right time to categorize?",
+    "text": "📘 Multi-condition single cell RNA-seq II: when is the right time to categorize?\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day3.html#introduction-to-spatial-omics",
+    "href": "lectures/day3.html#introduction-to-spatial-omics",
+    "title": "Day 3",
+    "section": "📘 Introduction to spatial omics",
+    "text": "📘 Introduction to spatial omics\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day5.html",
+    "href": "lectures/day5.html",
+    "title": "Day 5",
+    "section": "",
+    "text": "Note\n\n\n\nWelcome to Day 5! Below you’ll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources."
+  },
+  {
+    "objectID": "lectures/day5.html#Design",
+    "href": "lectures/day5.html#Design",
+    "title": "Day 5",
+    "section": "📘 Design of High Throughput Experiments and their Analysis",
+    "text": "📘 Design of High Throughput Experiments and their Analysis\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day5.html#ML",
+    "href": "lectures/day5.html#ML",
+    "title": "Day 5",
+    "section": "📘 Machine learning",
+    "text": "📘 Machine learning\nMaterials coming soon."
+  },
+  {
+    "objectID": "lectures/day5.html#AI_1",
+    "href": "lectures/day5.html#AI_1",
+    "title": "Day 5",
+    "section": "📘 Deep learning for digital pathology",
+    "text": "📘 Deep learning for digital pathology\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/links.html",
+    "href": "lectures/links.html",
+    "title": "Useful Links and Resources",
+    "section": "",
+    "text": "Strategic career building during your PhD:\nAdrian Liston, Lydia E. Makaroff\n“Strategic career building during your PhD: a timeline for maximizing your opportunities”\nOther papers by Adrian Liston:\n\nStarting Your Independent Research Laboratory\nNurturing a Positive Research Culture Within Your Laboratory"
+  },
+  {
+    "objectID": "lectures/links.html#career-research-advice",
+    "href": "lectures/links.html#career-research-advice",
+    "title": "Useful Links and Resources",
+    "section": "",
+    "text": "Strategic career building during your PhD:\nAdrian Liston, Lydia E. Makaroff\n“Strategic career building during your PhD: a timeline for maximizing your opportunities”\nOther papers by Adrian Liston:\n\nStarting Your Independent Research Laboratory\nNurturing a Positive Research Culture Within Your Laboratory"
+  },
+  {
+    "objectID": "lectures/links.html#tools-visualizations",
+    "href": "lectures/links.html#tools-visualizations",
+    "title": "Useful Links and Resources",
+    "section": "🧭 Tools & Visualizations",
+    "text": "🧭 Tools & Visualizations\n\nSleepwalk – Interactive embedding exploration\nHow GPT-3 works – Visualizations & animations\nExploratory Data Analysis with LLMs\nThe Bullshit Machines – Critical take on AI"
+  },
+  {
+    "objectID": "lectures/links.html#statistical-concepts",
+    "href": "lectures/links.html#statistical-concepts",
+    "title": "Useful Links and Resources",
+    "section": "📊 Statistical Concepts",
+    "text": "📊 Statistical Concepts\n\nAnscombe’s Quartet extensions:\nDatasets constructed to highlight statistical illusions"
+  },
+  {
+    "objectID": "lectures/links.html#bioinformatics",
+    "href": "lectures/links.html#bioinformatics",
+    "title": "Useful Links and Resources",
+    "section": "🧬 Bioinformatics",
+    "text": "🧬 Bioinformatics\n\nRNA velocity (mentioned by Davide):\n“Pumping the brakes on RNA velocity by understanding and interpreting RNA velocity estimates”"
+  },
+  {
+    "objectID": "lectures/links.html#annotation-working-group",
+    "href": "lectures/links.html#annotation-working-group",
+    "title": "Useful Links and Resources",
+    "section": "🧪 Annotation Working Group",
+    "text": "🧪 Annotation Working Group\n\nCHEUI – m6A and m5C modification identification from nanopore data\nGitHub repo: comprna/CHEUI\nCSAMA Annotation Repository – by Vince Carey"
+  },
+  {
+    "objectID": "lectures/links.html#multi-omics-bulk-working-group",
+    "href": "lectures/links.html#multi-omics-bulk-working-group",
+    "title": "Useful Links and Resources",
+    "section": "🔬 Multi-omics-bulk Working Group",
+    "text": "🔬 Multi-omics-bulk Working Group\n\nShared Google Doc with discussion notes\nMulti-omics summary and collaborative document"
+  },
+  {
+    "objectID": "lectures/links.html#r-packaging-working-group",
+    "href": "lectures/links.html#r-packaging-working-group",
+    "title": "Useful Links and Resources",
+    "section": "📦 R Packaging Working Group",
+    "text": "📦 R Packaging Working Group\n\nBioconductor Package Submission Guidelines\nR Package Development Walkthrough (Sonesson)\nPLOS CompBio summary of Bioconductor contributions"
+  },
+  {
+    "objectID": "lectures/links.html#photos",
+    "href": "lectures/links.html#photos",
+    "title": "Useful Links and Resources",
+    "section": "📷 Photos",
+    "text": "📷 Photos\n\nGoogle Photos Album\n\nFeel free to add your photos!"
+  },
+  {
+    "objectID": "registration.html",
+    "href": "registration.html",
+    "title": "Registration",
+    "section": "",
+    "text": "In order to register, each participant needs to fill in the form at the following link and complete the payment. Please include your contact email and name, you will receive the payment details by email.\nRegistration will open 1st February, 2026 \nIf you are unsure about which participant category you belong to, if you have special requirements for you invoice, or for any other reason, please contact us at csama[at]stat.unipd.it. We will guide you through registration.\n\n\n\n\n\n\n\n\n\n\n\nRegistration type\nDescription\nSummer School Fee\nAccommodation (optional)\n\n\n\n\nJunior Researcher\nUndergraduate or postgraduate students and postdocs\n1100 €\nTBA\n\n\nAcademic / Non-profit\nSenior researchers from academic and other non-profit institutions\n1575 €\nN/A\n\n\nIndustry\nResearchers from the commercial sector\n2600 €\nN/A\n\n\n\nThe course fees include participation in the lectures, the computer tutorials and all other events: coffee breaks and lunch, Wednesday’s social programme and dinner, course material.\nPlaces are awarded on a first-come, first-served basis. In previous years the course was sold out.\n\nWe are currently exploring the possibility of offering a special rate for accommodation near the venue for junior researchers. More details will be provided soon.\n\n\n\nCancellation of registration must be submitted in writing or via email and is valid only with acknowledgement of receipt.\nCancellation fees are dependent on the notice given:\nIf cancellation occurs less than 14 days prior to the start of the event, the cancellation fee is 100% of the registration fee. If cancellation occurs between 14 days and 1 month prior to the start of the event, the cancellation fee is 50% of the registration fee. Earlier than 1 month, a cancellation fee of EUR 70 will be charged. If payment has been made by the payment deadline of the event and a visa is not awarded in time to travel to the event, the full registration fee will be reimbursed. Evidence about the visa application will be requested. All applicable refunds will be issued following the close of the event. A refund will be returned via bank transfer.\nSpeakers and programme agenda are subject to change."
+  },
+  {
+    "objectID": "registration.html#course-fees",
+    "href": "registration.html#course-fees",
+    "title": "Registration",
+    "section": "",
+    "text": "Registration type\nDescription\nSummer School Fee\nAccommodation (optional)\n\n\n\n\nJunior Researcher\nUndergraduate or postgraduate students and postdocs\n1100 €\nTBA\n\n\nAcademic / Non-profit\nSenior researchers from academic and other non-profit institutions\n1575 €\nN/A\n\n\nIndustry\nResearchers from the commercial sector\n2600 €\nN/A\n\n\n\nThe course fees include participation in the lectures, the computer tutorials and all other events: coffee breaks and lunch, Wednesday’s social programme and dinner, course material.\nPlaces are awarded on a first-come, first-served basis. In previous years the course was sold out.\n\nWe are currently exploring the possibility of offering a special rate for accommodation near the venue for junior researchers. More details will be provided soon."
+  },
+  {
+    "objectID": "registration.html#cancellation-and-refund-policy",
+    "href": "registration.html#cancellation-and-refund-policy",
+    "title": "Registration",
+    "section": "",
+    "text": "Cancellation of registration must be submitted in writing or via email and is valid only with acknowledgement of receipt.\nCancellation fees are dependent on the notice given:\nIf cancellation occurs less than 14 days prior to the start of the event, the cancellation fee is 100% of the registration fee. If cancellation occurs between 14 days and 1 month prior to the start of the event, the cancellation fee is 50% of the registration fee. Earlier than 1 month, a cancellation fee of EUR 70 will be charged. If payment has been made by the payment deadline of the event and a visa is not awarded in time to travel to the event, the full registration fee will be reimbursed. Evidence about the visa application will be requested. All applicable refunds will be issued following the close of the event. A refund will be returned via bank transfer.\nSpeakers and programme agenda are subject to change."
+  },
+  {
+    "objectID": "programme.html",
+    "href": "programme.html",
+    "title": "CSAMA 2026 Biological Data Science",
+    "section": "",
+    "text": "Biological domains\n\nRNA-Seq from sequences to analysis: mapping, quantification at gene and transcript level\nSingle cell (droplet based) RNA-seq: exploratory analysis, quality assessment\nMass spectrometry-based proteomics and metabolomics\nImage-based data and spatial omics (CODEX, MERFISH et al.)\nEmerging topics and participant suggestions\n\nStatistics and data science\n\nIntroduction to the Bioconductor project (community, infrastructure, data structures, annotation resources)\nVisualization, including interactivity, PCA and other low-dimensional embeddings, clustering, distances, nearest-neighbour graphs\nStatistical hypothesis testing, false discovery rate, multiple testing, filtering and weighting\nRegression: experimental design and design matrices, power, identifiability, diagnostics, generalized linear models\nClassification / supervised machine learning, multi-omic data integration methods\nData manipulation, EDA, and tidy data analysis, applied to high dimensional biological data\nReproducibility, best practices for computational research, method comparison, benchmarking\nEmerging topics and participant suggestions"
+  },
+  {
+    "objectID": "programme.html#lecture-and-lab-topics",
+    "href": "programme.html#lecture-and-lab-topics",
+    "title": "CSAMA 2026 Biological Data Science",
+    "section": "",
+    "text": "Biological domains\n\nRNA-Seq from sequences to analysis: mapping, quantification at gene and transcript level\nSingle cell (droplet based) RNA-seq: exploratory analysis, quality assessment\nMass spectrometry-based proteomics and metabolomics\nImage-based data and spatial omics (CODEX, MERFISH et al.)\nEmerging topics and participant suggestions\n\nStatistics and data science\n\nIntroduction to the Bioconductor project (community, infrastructure, data structures, annotation resources)\nVisualization, including interactivity, PCA and other low-dimensional embeddings, clustering, distances, nearest-neighbour graphs\nStatistical hypothesis testing, false discovery rate, multiple testing, filtering and weighting\nRegression: experimental design and design matrices, power, identifiability, diagnostics, generalized linear models\nClassification / supervised machine learning, multi-omic data integration methods\nData manipulation, EDA, and tidy data analysis, applied to high dimensional biological data\nReproducibility, best practices for computational research, method comparison, benchmarking\nEmerging topics and participant suggestions"
+  },
+  {
+    "objectID": "programme.html#schedule-subject-to-change",
+    "href": "programme.html#schedule-subject-to-change",
+    "title": "CSAMA 2026 Biological Data Science",
+    "section": "Schedule (subject to change)",
+    "text": "Schedule (subject to change)\n\n\n\n\n\n\n\nDate/Time\nContent\n\n\n\n\nSun 24 May\n\n\n\n18:00-20:00\nRegistration & help desk\n\n\n18:00-20:00\nGet together with drinks\n\n\nMon 25 May\n\n\n\n08:30-09:15\nLecture: Introduction to Bioconductor\n\n\n09:15-10:00\nLecture: What do we aim to measure and why: applications in transcriptomics\n\n\n10:00-10:30\n~~~ Coffee ~~~\n\n\n10:30-11:15\nLecture: Regression: randomness and linear models\n\n\n11:15-12:00\nLecture: Hypothesis testing\n\n\n12:00-12:30\nDiscussion in the garden\n\n\n12:30-14:00\n~~~ Lunch break ~~~\n\n\n14:00-15:30\nLab: R and Bioconductor basics\n\n\n15:30-16:00\n~~~ Coffee ~~~\n\n\n16:00-17:00\nLab continuation\n\n\n17:00-17:30\nIntro to Project Groups (optional)\n\n\n20:10-22:00\nEvening session: Drinks will be provided\n\n\nTue 26 May\n\n\n\n08:30-09:15\nLecture: RNA-Seq differential expression\n\n\n09:15-10:00\nLecture: Dimension reduction: PCA and other low-dimensional embeddings\n\n\n10:00-10:30\n~~~ Coffee ~~~\n\n\n10:30-11:15\nLecture: Chromatin accessibility and ATAC-seq\n\n\n11:15-12:00\nLecture: Single-cell RNA-seq: exploration, quality control, low-dimensional embeddings\n\n\n12:00-12:30\nDiscussion in the garden\n\n\n12:30-14:00\n~~~ Lunch break ~~~\n\n\n14:00-15:30\nLab: End-to-end RNA-Seq workflow\n\n\n14:00-15:30\nLab: Single-cell transcriptomics\n\n\n15:30-16:00\n~~~ Coffee ~~~\n\n\n16:00-17:00\nLab continuation\n\n\n17:00-17:30\nFlashlight talks\n\n\n20:10-22:00\nEvening session: Drinks will be provided\n\n\nWed 27 May\n\n\n\n08:30-09:15\nLecture: Distances, nearest-neighbour graphs and clustering\n\n\n09:15-10:00\nLecture: Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping\n\n\n10:00-10:30\n~~~ Coffee ~~~\n\n\n10:30-11:15\nLecture: Multi-condition single cell RNA-seq II: when is the right time to categorize?\n\n\n11:15-12:00\nLecture: Introduction to spatial omics\n\n\n12:00-14:00\n~~~ Lunch break ~~~\n\n\n14:00-17:00\nSocial Programme: Excursion to the mountains and dinner.\n\n\nThu 28 May\n\n\n\n08:30-09:15\nLecture: Mass spectrometry-based proteomics including single-cell\n\n\n09:15-10:00\nLecture: Mass spectrometry-based metabolomics\n\n\n10:00-10:30\n~~~ Coffee ~~~\n\n\n10:30-11:15\nLecture: Statistical methods for spatial omics\n\n\n11:15-12:00\nLecture: Bioconductor advanced topics: annotation resources, language interoperation\n\n\n12:00-12:30\nDiscussion in the garden\n\n\n12:30-14:00\n~~~ Lunch break ~~~\n\n\n14:00-14:45\nLab: Proteomics\n\n\n14:45-15:15\nLab: End-to-end Metabolomics workflow\n\n\n15:15-15:30\n~~~ Coffee ~~~\n\n\n15:30-17:00\nLab: Multi-condition single cell RNA-seq differential analysis\n\n\n15:30-17:00\nLab: Intro to Tidyomics: tidy data analysis applied to omics data\n\n\n15:30-17:00\nLab: Spatial Transcriptomics\n\n\n15:30-17:00\nLab: Trajectory analysis\n\n\n15:30-17:00\nLab: Interactive exploration with iSEE\n\n\n15:30-17:00\nLab: Working with Image Data\n\n\n17:00-17:30\nFlashlight talks\n\n\nFri 29 May\n\n\n\n08:30-09:15\nLecture: Design of High Throughput Experiments and their Analysis\n\n\n09:15-10:00\nLecture: Machine learning\n\n\n10:00-10:30\n~~~ Coffee ~~~\n\n\n10:30-11:15\nLecture: Deep learning for digital pathology\n\n\n11:15-12:00\nPanel discussion: The use of LLM in biology: challenges and perspectives\n\n\n12:00\nClosing remarks\n\n\n12:30-14:00\n~~~ Lunch break ~~~\n\n\n14:00-15:30\nCareer panel discussion\n\n\n15:30-16:00\n~~~ Coffee ~~~\n\n\n16:00-16:30\nGroup project presentations"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "  CSAMA 2026  Biological Data Science  ",
+    "section": "",
+    "text": "Overview\nThe one-week intensive summer school Biological Data Science teaches advanced computational analyses of modern molecular data types in biology and biomedicine, including single cell and spatial omics. It comprises lectures covering underlying theory and concepts, practical hands-on exercises, and informal discussion sessions. Lecture topics include modern biotechnologies for quantitative measurements, statistical analysis, visualisation, and computational tools. Hands-on exercises are looking at state-of-the-art datasets, using the R / Bioconductor environment. At the end of the course, you should be better able to design, implement and interpret analyses on your own (multi-)omic, single and/or spatial data, adapt and combine different tools, and make informed and scientifically sound choices about analysis strategies.\n\n\nFaculty \n\n\n\n\n\n\n\n\n Vince Carey Harvard Medical School\n Helena Crowell CNAG Barcelona\n Laurent Gatto UC Louvain\n\n\n\n\n\n\n\n Robert Gentleman\n Wolfgang Huber EMBL\n Johannes Rainer Eurac Research\n\n\n\n\n\n\n\n Davide Risso University of Padova\n Charlotte Soneson Friedrich Miescher Institute for Biomedical Research\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrganized in collaboration with"
+  },
+  {
+    "objectID": "lab/8_metab/Metabonaut.html",
+    "href": "lab/8_metab/Metabonaut.html",
+    "title": "End-to-end Metabolomics workflow",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/8_metab/Metabonaut.html#open-the-lab-file",
+    "href": "lab/8_metab/Metabonaut.html#open-the-lab-file",
+    "title": "End-to-end Metabolomics workflow",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/14_Image.html",
+    "href": "lab/14_Image.html",
+    "title": "Working with Image Data",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/14_Image.html#open-the-lab-file",
+    "href": "lab/14_Image.html#open-the-lab-file",
+    "title": "Working with Image Data",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/10_Tidyomics.html",
+    "href": "lab/10_Tidyomics.html",
+    "title": "Intro to Tidyomics: tidy data analysis applied to omics data",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/10_Tidyomics.html#open-the-lab-file",
+    "href": "lab/10_Tidyomics.html#open-the-lab-file",
+    "title": "Intro to Tidyomics: tidy data analysis applied to omics data",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/12_Trajectory.html",
+    "href": "lab/12_Trajectory.html",
+    "title": "Trajectory analysis",
+    "section": "",
+    "text": "Trajectory analysis with slingshot and tradeSeq"
+  },
+  {
+    "objectID": "code.html",
+    "href": "code.html",
+    "title": "Code of Conduct",
+    "section": "",
+    "text": "CSAMA 2026 is a Bioconductor event. As such, the Bioconductor Code of Conduct applies. For more details, see the Bioconductor Code of Conduct statement \nThe Code of Conduct is copy-pasted below.\n\n\nThe Bioconductor community values an open approach to science that promotes:\n\nsharing of ideas, code, software and expertise\ncollaboration\ndiversity and inclusivity\na kind and welcoming environment\ncommunity contributions\n\nIn line with these values, Bioconductor is dedicated to providing a welcoming, supportive, collegial experience free of harassment, intimidation, and bullying regardless of:\n\nidentity: gender, gender identity and expression, sexual orientation, disability, physical appearance, ethnicity, body size, race, age, religion, language, etc.\nintellectual position: approaches to data analysis, software preferences, coding style, scientific perspective, stage of career, etc.\n\nBy participating in this community, you agree not to engage in behavior contrary to these values at any Bioconductor-sponsored event (in person or virtual, including but not limited to talks, workshops, poster sessions, social activities), electronic communication channels (including but not limited to the Bioconductor Zulip space, the support site, online forums, the package review site, and social media communications), or packages (including commits). Furthermore, we require all participants to have identifiable accounts in Bioconductor online forums. Accounts that do not adhere to this after request to de-anonymise may be deleted.\nWe do not tolerate harassment, intimidation, or bullying of community members. Sexual language and imagery are not appropriate in presentations, communications or in online venues, including chats.\nAny person violating the Code of Conduct may be sanctioned or expelled temporarily or permanently from an electronic platform or event at the discretion of the Code of Conduct committee.\nThe Bioconductor community is committed to ethical partnerships and avoiding partnerships with entities whose practices are inconsistent with Bioconductor values. We encourage community members to report or raise concerns about partnerships they deem unethical to the Code of Conduct committee via the reporting form.\n\n\nHarassment includes, but is not limited to:\n\nMaking comments in chats, to an audience or personally, that belittle or demean another person\nSharing sexual images online\nHarassing photography or recording\nSustained disruption of talks or other events\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior\n\nIntimidation and bullying include, but are not limited to:\n\nAggressive or browbeating behavior\nMocking or insulting another person’s intellect, work, perspective, or question/comment\nMaking reference to someone’s gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or other personal attributes in the context of a scientific discussion\nDeliberately making someone feel unwelcome\nTrolling behaviour (deliberately inflammatory or offensive messages)\nSustained off-topic posts\n\n\n\n\n\nAnyone asked to stop harassing or intimidating behavior is expected to comply immediately.\nIf a person contravenes the Code of Conduct, the Code of Conduct committee retains the right to take any action that ensures a welcoming environment for all community members. This includes warning the alleged offender or temporary/permanent expulsion from the event and/or electronic platforms under Bioconductor’s control.\nThe Code of Conduct committee may take action to redress anything designed to, or with the clear impact of, disrupting an event or electronic communication platform or making the environment hostile for any community member.\nWe expect everyone in the Bioconductor community to comply with the Code of Conduct when participating in Bioconductor events and online communication platforms.\n\n\n\nIf someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. You can make a report either anonymously or personally. All reports will be reviewed by the Code of Conduct Committee and will be kept confidential.\n\n\nYou can make an anonymous or non-anonymous report via the following link: https://forms.gle/gEWHBWnXvZbEdFsq5. It is a free-form text box that will be forwarded to the Code of Conduct Committee. Alternatively you can email the Code of Conduct Committee (code-of-conduct@bioconductor.org). If you are uncomfortable reporting to the Code of Conduct committee as a group, you can contact any individual committee member via email or a direct message on the Bioconductor Zulip. Please include screenshots and/or copies of all relevant electronic conversations whenever possible (you don’t need to compromise your anonymity!).\nWe can’t follow up an anonymous report with you directly, but we will fully investigate it and take whatever action is necessary to prevent a recurrence.\n\n\n\nYou can make a personal report to any member of the event Code of Conduct committee present at an event.\nWhen taking a personal report, we will ensure you are safe and cannot be overheard. We may involve other event staff to ensure your report is managed properly. Once safe, we’ll ask you to tell us about what happened. This can be upsetting, but we’ll handle it as respectfully as possible, and you can bring someone to support you. You won’t be asked to confront anyone, and we won’t tell anyone who you are.\nOur team will be happy to help you get the relevant support (e.g. help contacting hotel/venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event).\nWe value your attendance and participation at Bioconductor events and in our community.\n\n\n\nWe understand that you may want a person unrelated to Bioconductor overseeing your conflict resolution. To facilitate this, the Code of Conduct Committee will appoint an ombudsperson from a different open source community than members of the Bioconductor project. While they do not have power to establish, change or set aside decisions made by the Code of Conduct Committee, they can assist community members by offering consultation, mediation, coaching and referrals to other resources. The ombudsperson can be contacted directly via email (see below) to ensure a confidential, impartial, informal and independent process.\n\n\n\nThe Code of Conduct Committee follows a standard procedure to deal with conflicts. This procedure is briefly summarized here. Incident procedures are based on the book “How to Respond to Code of Conduct Reports” by Valerie Aurora and Mary Gardiner.\n\n\n\n\n(Co-Chair) Kevin Rue-Albrecht kevinrue67@gmail.com (until 2026) he/him [FR, EN] (CAB)\n(Co-Chair) Gerry Tonkin-Hill g.tonkinhill@gmail.com (until 2025) he/him [EN]\nMartín Dávila-Cervantes aldntmi@gmail.com (until 2025) he/him [EN, FR, ES]\nFederica Gazzelloni fede.gazzelloni@gmail.com (until 2025) she/her [IT, EN]\nFederico Marini fede.maro@gmail.com (until 2025) he/him [EN, IT, DE]\nShixiang Wang wangshx@shanghaitech.edu.cn (until 2025) he/him [CN, EN]\nPaulina Boadiwaa Mensah pabbyboadiwaa@gmail.com (until 2025) she/her [EN, Akan]\nPeace Sandy peacesandy04@gmail.com she/her (until 2025) [EN]\nSinmisoluwa Adesanya adesanyasinmisoluwa@gmail.com she/her (until 2025) [EN, Yoruba]\nObuli Abraham obuliabraham@gmail.com he/him (until 2026) [En]\nMaria Doyle maria.doyle@ul.ie she/her (until 2026) [En]\n(Ombudsperson) Michelle Savage michellesavage.galaxy@gmail.com (Galaxy project) she/her [ES, EN]"
+  },
+  {
+    "objectID": "code.html#version-1.4.0-6th-october-2025",
+    "href": "code.html#version-1.4.0-6th-october-2025",
+    "title": "Code of Conduct",
+    "section": "",
+    "text": "The Bioconductor community values an open approach to science that promotes:\n\nsharing of ideas, code, software and expertise\ncollaboration\ndiversity and inclusivity\na kind and welcoming environment\ncommunity contributions\n\nIn line with these values, Bioconductor is dedicated to providing a welcoming, supportive, collegial experience free of harassment, intimidation, and bullying regardless of:\n\nidentity: gender, gender identity and expression, sexual orientation, disability, physical appearance, ethnicity, body size, race, age, religion, language, etc.\nintellectual position: approaches to data analysis, software preferences, coding style, scientific perspective, stage of career, etc.\n\nBy participating in this community, you agree not to engage in behavior contrary to these values at any Bioconductor-sponsored event (in person or virtual, including but not limited to talks, workshops, poster sessions, social activities), electronic communication channels (including but not limited to the Bioconductor Zulip space, the support site, online forums, the package review site, and social media communications), or packages (including commits). Furthermore, we require all participants to have identifiable accounts in Bioconductor online forums. Accounts that do not adhere to this after request to de-anonymise may be deleted.\nWe do not tolerate harassment, intimidation, or bullying of community members. Sexual language and imagery are not appropriate in presentations, communications or in online venues, including chats.\nAny person violating the Code of Conduct may be sanctioned or expelled temporarily or permanently from an electronic platform or event at the discretion of the Code of Conduct committee.\nThe Bioconductor community is committed to ethical partnerships and avoiding partnerships with entities whose practices are inconsistent with Bioconductor values. We encourage community members to report or raise concerns about partnerships they deem unethical to the Code of Conduct committee via the reporting form.\n\n\nHarassment includes, but is not limited to:\n\nMaking comments in chats, to an audience or personally, that belittle or demean another person\nSharing sexual images online\nHarassing photography or recording\nSustained disruption of talks or other events\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior\n\nIntimidation and bullying include, but are not limited to:\n\nAggressive or browbeating behavior\nMocking or insulting another person’s intellect, work, perspective, or question/comment\nMaking reference to someone’s gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or other personal attributes in the context of a scientific discussion\nDeliberately making someone feel unwelcome\nTrolling behaviour (deliberately inflammatory or offensive messages)\nSustained off-topic posts"
+  },
+  {
+    "objectID": "code.html#enforcement",
+    "href": "code.html#enforcement",
+    "title": "Code of Conduct",
+    "section": "",
+    "text": "Anyone asked to stop harassing or intimidating behavior is expected to comply immediately.\nIf a person contravenes the Code of Conduct, the Code of Conduct committee retains the right to take any action that ensures a welcoming environment for all community members. This includes warning the alleged offender or temporary/permanent expulsion from the event and/or electronic platforms under Bioconductor’s control.\nThe Code of Conduct committee may take action to redress anything designed to, or with the clear impact of, disrupting an event or electronic communication platform or making the environment hostile for any community member.\nWe expect everyone in the Bioconductor community to comply with the Code of Conduct when participating in Bioconductor events and online communication platforms."
+  },
+  {
+    "objectID": "code.html#reporting",
+    "href": "code.html#reporting",
+    "title": "Code of Conduct",
+    "section": "",
+    "text": "If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. You can make a report either anonymously or personally. All reports will be reviewed by the Code of Conduct Committee and will be kept confidential.\n\n\nYou can make an anonymous or non-anonymous report via the following link: https://forms.gle/gEWHBWnXvZbEdFsq5. It is a free-form text box that will be forwarded to the Code of Conduct Committee. Alternatively you can email the Code of Conduct Committee (code-of-conduct@bioconductor.org). If you are uncomfortable reporting to the Code of Conduct committee as a group, you can contact any individual committee member via email or a direct message on the Bioconductor Zulip. Please include screenshots and/or copies of all relevant electronic conversations whenever possible (you don’t need to compromise your anonymity!).\nWe can’t follow up an anonymous report with you directly, but we will fully investigate it and take whatever action is necessary to prevent a recurrence.\n\n\n\nYou can make a personal report to any member of the event Code of Conduct committee present at an event.\nWhen taking a personal report, we will ensure you are safe and cannot be overheard. We may involve other event staff to ensure your report is managed properly. Once safe, we’ll ask you to tell us about what happened. This can be upsetting, but we’ll handle it as respectfully as possible, and you can bring someone to support you. You won’t be asked to confront anyone, and we won’t tell anyone who you are.\nOur team will be happy to help you get the relevant support (e.g. help contacting hotel/venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event).\nWe value your attendance and participation at Bioconductor events and in our community.\n\n\n\nWe understand that you may want a person unrelated to Bioconductor overseeing your conflict resolution. To facilitate this, the Code of Conduct Committee will appoint an ombudsperson from a different open source community than members of the Bioconductor project. While they do not have power to establish, change or set aside decisions made by the Code of Conduct Committee, they can assist community members by offering consultation, mediation, coaching and referrals to other resources. The ombudsperson can be contacted directly via email (see below) to ensure a confidential, impartial, informal and independent process.\n\n\n\nThe Code of Conduct Committee follows a standard procedure to deal with conflicts. This procedure is briefly summarized here. Incident procedures are based on the book “How to Respond to Code of Conduct Reports” by Valerie Aurora and Mary Gardiner.\n\n\n\n\n(Co-Chair) Kevin Rue-Albrecht kevinrue67@gmail.com (until 2026) he/him [FR, EN] (CAB)\n(Co-Chair) Gerry Tonkin-Hill g.tonkinhill@gmail.com (until 2025) he/him [EN]\nMartín Dávila-Cervantes aldntmi@gmail.com (until 2025) he/him [EN, FR, ES]\nFederica Gazzelloni fede.gazzelloni@gmail.com (until 2025) she/her [IT, EN]\nFederico Marini fede.maro@gmail.com (until 2025) he/him [EN, IT, DE]\nShixiang Wang wangshx@shanghaitech.edu.cn (until 2025) he/him [CN, EN]\nPaulina Boadiwaa Mensah pabbyboadiwaa@gmail.com (until 2025) she/her [EN, Akan]\nPeace Sandy peacesandy04@gmail.com she/her (until 2025) [EN]\nSinmisoluwa Adesanya adesanyasinmisoluwa@gmail.com she/her (until 2025) [EN, Yoruba]\nObuli Abraham obuliabraham@gmail.com he/him (until 2026) [En]\nMaria Doyle maria.doyle@ul.ie she/her (until 2026) [En]\n(Ombudsperson) Michelle Savage michellesavage.galaxy@gmail.com (Galaxy project) she/her [ES, EN]"
+  },
+  {
+    "objectID": "programme-coming-soon.html",
+    "href": "programme-coming-soon.html",
+    "title": "The 2025 programme is under development and will be updated soon",
+    "section": "",
+    "text": "Please see the CSAMA 2024 Programme for a previous example of the structure and content.\n\n\n\n\n\nRNA-Seq from sequences to analysis: mapping, quantification at gene and transcript level\nSingle cell (droplet based) RNA-seq: exploratory analysis, quality assessment\nMass spectrometry-based proteomics and metabolomics\nImage-based data and spatial omics (CosMX, Xenium et al.)\nEmerging topics and participant suggestions\n\n\n\n\n\nIntroduction to the Bioconductor project (community, infrastructure, data structures, annotation resources)\nVisualization, including interactivity, PCA and other low-dimensional embeddings, clustering, distances, nearest-neighbour graphs\nStatistical hypothesis testing, false discovery rate, multiple testing, filtering and weighting\nRegression: experimental design and design matrices, power, identifiability, diagnostics, generalized linear models\nClassification / supervised machine learning, multi-omic data integration methods\nData manipulation, EDA, and tidy data analysis, applied to high dimensional biological data\nReproducibility, best practices for computational research, method comparison, benchmarking\nEmerging topics and participant suggestions"
+  },
+  {
+    "objectID": "programme-coming-soon.html#tentative-lecture-and-lab-topics",
+    "href": "programme-coming-soon.html#tentative-lecture-and-lab-topics",
+    "title": "The 2025 programme is under development and will be updated soon",
+    "section": "",
+    "text": "RNA-Seq from sequences to analysis: mapping, quantification at gene and transcript level\nSingle cell (droplet based) RNA-seq: exploratory analysis, quality assessment\nMass spectrometry-based proteomics and metabolomics\nImage-based data and spatial omics (CosMX, Xenium et al.)\nEmerging topics and participant suggestions\n\n\n\n\n\nIntroduction to the Bioconductor project (community, infrastructure, data structures, annotation resources)\nVisualization, including interactivity, PCA and other low-dimensional embeddings, clustering, distances, nearest-neighbour graphs\nStatistical hypothesis testing, false discovery rate, multiple testing, filtering and weighting\nRegression: experimental design and design matrices, power, identifiability, diagnostics, generalized linear models\nClassification / supervised machine learning, multi-omic data integration methods\nData manipulation, EDA, and tidy data analysis, applied to high dimensional biological data\nReproducibility, best practices for computational research, method comparison, benchmarking\nEmerging topics and participant suggestions"
+  },
+  {
+    "objectID": "venue.html",
+    "href": "venue.html",
+    "title": "Venue",
+    "section": "",
+    "text": "We will welcome you on Sunday around 18:00h for a welcome buffet at the main site. The main idea of this pre-course meeting is to meet each other in an informal environment.\nPlease note: there will be food and drinks to satisfy your hunger and thirst, and usually we move on into the town in smaller groups to enjoy the many beer gardens and restaurants.\n\n\nThe following map is a very reduced one. You can have a big one in PNG format, or you can browse an interactive one from the web page of the Tourist Office in Bressanone-Brixen.\n\n\n\nCasa della Gioventù is the place where morning lectures, afternoon labs, and the evening sessions will take place, and it is also the place of the welcome buffet. It is a building of the University of Padova, located in Via Rio Bianco 6, 5 minutes from the town center.\n\n\n\nIt is a hotel were many of the participants usually stay.\n\n\n\nWhere many of you will arrive."
+  },
+  {
+    "objectID": "venue.html#conference-site",
+    "href": "venue.html#conference-site",
+    "title": "Venue",
+    "section": "",
+    "text": "The following map is a very reduced one. You can have a big one in PNG format, or you can browse an interactive one from the web page of the Tourist Office in Bressanone-Brixen.\n\n\n\nCasa della Gioventù is the place where morning lectures, afternoon labs, and the evening sessions will take place, and it is also the place of the welcome buffet. It is a building of the University of Padova, located in Via Rio Bianco 6, 5 minutes from the town center.\n\n\n\nIt is a hotel were many of the participants usually stay.\n\n\n\nWhere many of you will arrive."
+  },
+  {
+    "objectID": "lab/7_prot/proteom.html",
+    "href": "lab/7_prot/proteom.html",
+    "title": "Proteomics",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/7_prot/proteom.html#open-the-lab-file",
+    "href": "lab/7_prot/proteom.html#open-the-lab-file",
+    "title": "Proteomics",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/13_iSEE.html",
+    "href": "lab/13_iSEE.html",
+    "title": "Interactive exploration with iSEE",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/13_iSEE.html#open-the-lab-file",
+    "href": "lab/13_iSEE.html#open-the-lab-file",
+    "title": "Interactive exploration with iSEE",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/11_spatial/spatial.html",
+    "href": "lab/11_spatial/spatial.html",
+    "title": "Spatial Transcriptomics",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/11_spatial/spatial.html#open-the-lab-file",
+    "href": "lab/11_spatial/spatial.html#open-the-lab-file",
+    "title": "Spatial Transcriptomics",
+    "section": "",
+    "text": "Click here to access the lab"
+  },
+  {
+    "objectID": "lab/2_quarto-intro/2_quarto-intro.html",
+    "href": "lab/2_quarto-intro/2_quarto-intro.html",
+    "title": "Reproducible publishing and literate programming with Quarto",
+    "section": "",
+    "text": "How (many) manuscripts are made\n\nThe schematic above shows an (over-simplified, of course) illustration of the traditional process used to generate many scientific manuscripts. In order to produce such a manuscript, we collect data, run various types of analyses, generate plots and schematics, carefully assemble them into the final figures for the paper, write the text and paste the analysis results and figures in the document, before submitting to a journal for consideration.\nAfter some time, we receive the reviewer reports, often suggesting some changes or additions to the analysis. At this point it’s up to us to (1) make sure that we still remember how the original figures and results were generated, and (2) go through the whole process above again to create the updated figures and results.\nWhat we will talk about in this workshop is one way of structuring our work so that (1) it, arguably, becomes easier to get back into it after some time, (2) we know exactly how each original figure was created, and (3) the amount of manual work required to revise the manuscript is reduced. In addition, it has the advantage of automatically providing us with a reproducible record of the analysis, which can be shared for example as a supplementary file of the manuscript.\n\n\nWhat is literate programming?\nThe term ‘literate programming’ was introduced by Donald Knuth in 1984, and refers to a programming paradigm where an explanation of the analysis process in natural language is interspersed with chunks of executable source code. This single source file is then used to create both machine executable code (effectively, extracting the code chunks) and a comprehensive human-readable report containing both the natural language text and the results of running the code. A recent publication by Ziemann et al. considers literate programming one of the five pillars of reproducible computational research:\n\n\n\nAccording to the same article, there are several advantages of using literate programming, including:\n\nsince the report contains both the code and the output, we know precisely which code was executed to generate a specific result (compare this to copy-pasting your figures from the RStudio viewer into a Word document), and the text and results are arranged in a logical and consistent way. Circumventing the copy-pasting of results into reports also saves time.\nit makes it easy to provide extensive documentation and explanations of the code - in principle, we can write entire papers using literate programming!\nit provides built-in checks that the given code actually runs - if not, no output report is generated.\n\n\n\nWhat is R Markdown?\nR Markdown lets you write dynamic, reproducible documents in R (actually, it can also contain code in other languages like python or bash!). An R Markdown document can contain regular text as well as code chunks, equations and images. The document can be rendered into many different output formats, such as html, pdf, Microsoft Word, websites, and slideshows (for the latter, check out xaringan).\n\n\nWhat is Quarto?\nQuarto is an open-source publishing system built on markdown. It is developed and maintained by Posit. For R users, Quarto can be thought of as “next generation” R Markdown, combining what was previously spread across many packages (including rmarkdown, bookdown, and xaringan) into one system. Quarto is fundamentally multi-lingual, and can for example be used to write python code without requiring R to be present (as mentioned, R Markdown can also contain python code, but R needs to be present in order to compile the report). For a more detailed overview, see e.g. the Quarto FAQ or this blog post. In terms of the syntax, R Markdown and Quarto are very similar, and in many cases simply changing the file extension from .Rmd to .qmd or vice versa will give a valid file.\nIn this workshop, we will use Quarto, but most of the basics that we are going to cover works perfectly fine also with R Markdown. Moreover, the main walkthrough will use R and RStudio, but pointers will be made to the corresponding steps in Visual Studio Code (assuming that the latter is used for python projects).\nTo install Quarto on your local computer, follow the instructions on https://quarto.org/docs/get-started/. If you are using Visual Studio Code, you also need to install the Quarto and Jupyter extensions.\n\n\nSetup instructions\nTo prepare for the workshop, follow the instructions in the box below.\n\n\n\n\n\n\nInstallation/setup instructions\n\n\n\n\n\nIf you would like to follow along on your own computer during the workshop, please install Quarto and prepare your setup following the instructions below. For demonstrations, we will mostly be using RStudio. However, if you prefer to work with Python and Visual Studio Code, that is also fine - we provide parallel instructions for most parts of the workshop material.\nFor general instructions on how to install Quarto, see https://quarto.org/docs/get-started/.\n\nR / RStudio setup\nRecent versions of RStudio comes with built-in support for Quarto. Thus, we recommend installing a recent version of R (the current release version is 4.5) and RStudio, e.g. following the links and instructions available at https://posit.co/download/rstudio-desktop/.\nIn order to render documents into pdf format, Quarto needs to be able to access LaTeX. You can use Quarto to install TinyTeX by following the instructions at https://quarto.org/docs/output-formats/pdf-basics.html - i.e., type\n\n\n\n\n\n\nquarto install tinytex\n\n\n\nin the terminal (this can be done from the RStudio Terminal window).\n\n\nPython / Visual Studio Code setup\nFor instructions on how to get started with Quarto in VS Code, see https://quarto.org/docs/get-started/hello/vscode.html.\nFirst, make sure that Python is available. For example, use conda to create an environment (here named quartoenv) with the packages that we will use in this workshop:\n\n\n\n\n\n\nconda create -n quartoenv -c conda-forge python=3.12 jupyter \\\nmatplotlib scikit-learn papermill session-info\n\n\n\nInstructions on how to install VS Code can be found at https://code.visualstudio.com/.\nYou will need to add a few extensions to VS Code (you can do this from inside VS Code by clicking on the Extensions tab). The extensions we need are Python, Quarto, and Jupyter.\nNext, open the Command Palette by pressing Ctrl + Shift + P (Cmd + Shift + P on macOS), and search for the command Python: Select Interpreter. Click on it and select the interpreter corresponding to the conda environment that you created above.\nFinally, in order to render documents into pdf format, Quarto needs to be able to access LaTeX. You can use Quarto to install TinyTeX by following the instructions at https://quarto.org/docs/output-formats/pdf-basics.html - i.e., type\n\n\n\n\n\n\nquarto install tinytex\n\n\n\nin the terminal (this can be done from the VS Code Terminal panel).\n\n\n\n\n\n\nCreating a .qmd file in RStudio\nTo create a Quarto document (.qmd file) in RStudio, click on New File, and select Quarto Document (or, equivalently, go via the menu File -&gt; New File -&gt; Quarto Document).\n\nIn the dialog that comes up, you can give the document a title and type your name into the Author field, and select the default output format (this can be changed later). Note that generating pdf or Word output requires additional software to be available on your system - for now, let’s select HTML as the output format.\n\nClicking “Create” opens the Quarto document in the RStudio IDE. Before we look at the content, save the document to disk, either by clicking on the ‘Save’ button or by going via File -&gt; Save - here, we will use the name qmd-example.qmd.\n\n\n\n\n\n\nPython/Visual Studio Code\n\n\n\n\n\nTo create a new file in Visual Studio Code, go to the Explorer tab and click on New File....\n\nGive the file a name (e.g. qmd-example.qmd). Then paste the following content into the file (we will go through it below) and set the author name appropriately.\n---\ntitle: \"My first Quarto document\"\nauthor: \"Charlotte Soneson\"\nformat: html\n---\n\n## Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see &lt;https://quarto.org&gt;.\n\n## Running Code\n\nWhen you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n```{python}\n1 + 1\n```\n\nYou can add options to executable code like this \n\n```{python}\n#| echo: false\n2 * 2\n```\n\nThe `echo: false` option disables the printing of code (only output is displayed).\n\n\n\n\n\nRendering the document\nThere are several ways to render the .qmd document to its final format. In RStudio, one way is to click on the Render button above the document (or use the keyboard shortcut Ctrl+Shift+K, or Cmd+Shift+K on macOS):\n\nAnother option is to type the following in the R console (assuming that the quarto package is installed and that the .qmd file is saved as qmd-example.qmd in the current working directory):\n\nquarto::quarto_render(\"qmd-example.qmd\")\n\nEither of these options will render the document in a new R session. The figure below illustrates what happens ‘under the hood’ when a document is rendered:\n Source: https://quarto.org/docs/get-started/hello/rstudio.html\nMore settings related to the rendering can be found by clicking on the little gear next to the Render button:\n\n\n\n\n\n\n\nRendering an R Markdown document\n\n\n\nTo render an R Markdown document, you can click the Knit button in RStudio, or type\n\nrmarkdown::render(\"rmd-example.rmd\")\n\nHowever, in this case there is an important difference between the two ways of rendering the document: clicking on the Knit button will render the document in a new R session, while rmarkdown::render() will by default execute the code in the document in the “parent environment” (the current active R session).\n\n\nFor now, let’s click on the Render button to generate an HTML file from our .qmd document.\n\n\n\n\n\n\nPython/Visual Studio Code\n\n\n\n\n\nTo render the document in Visual Studio Code, first make sure that you have selected a suitable python interpreter (use Ctrl + Shift + P, or Cmd + Shift + P on macOS, to open the command palette, and then select a suitable python interpreter). Then, the document can be rendered by clicking on the Preview button (left-most button in the top right corner):\n\nAlternatively, one can use the keyboard shortcut Ctrl + Shift + K (or Cmd + Shift + K on macOS).\nThe rendering is done in a very similar way to what we showed for RStudio above, the main difference being that the Jupyter engine is used instead of knitr to extract and evaluate the code chunks.\n\nSource: https://quarto.org/docs/get-started/hello/vscode.html\n\n\n\n\n\nThe YAML header\nNow that we’ve tried the process of generating the output file, let’s take a look at the structure of the .qmd file. The first lines form the so called YAML header - this is where you specify what type of document you want to build from the .qmd file, and provide details about styles and themes. We can see that the template document generated by RStudio contains the information that we specified when creating the file.\n---\ntitle: \"My first Quarto document\"\nauthor: \"Charlotte Soneson\"\nformat: html\n---\nIf we want to change the output format, this can be done in the YAML header (i.e., there’s no need to create a new document from scratch). For example, if we want a PDF file rather than an HTML file, we change the last line in the YAML header to:\nformat: pdf\nWe can configure many aspects of our document via the YAML fields. The available fields depend to some extent on the selected format. This website lists the options available for HTML files.\nIn our example document, let’s add a table of contents and change the theme. You can find a list of available themes here. We will also add a line to make the HTML file self-contained (embed-resources: true). Without this line, any external dependencies of the HTML file (images, style sheets, etc) will be placed in a separate folder, which must be distributed along with the HTML file for proper rendering. A self-contained HTML file is larger, but can be shared or moved without external dependencies. Our YAML header will now look something like this (note the indentation under format - this is important for correct parsing of the YAML):\n---\ntitle: \"My first Quarto document\"\nauthor: \"Charlotte Soneson\"\nformat: \n    html:\n        toc: true\n        theme: cosmo\n        embed-resources: true\n---\nTry to render the document again and see the difference. If the options that we specify should apply across any output format that we may want to use, we can also define them on the top level, rather than under the specific format. For example, if we would like to be able to render the document also into PDF format, and we would like to have a table of content also in that case, but the cosmo theme should only be used for the html format, this could be specified as follows:\n---\ntitle: \"My first Quarto document\"\nauthor: \"Charlotte Soneson\"\ntoc: true\nformat: \n    html:\n        theme: cosmo\n        embed-resources: true\n    pdf: default\n---\nIf we add multiple possible formats as in the example above, we can choose the rendering format in the little dropdown menu that then appears next to the ‘Render’ button:\n\nBy default, the format that is specified first in the YAML will be used.\n\n\n\n\n\n\nExercise\n\n\n\nAdd a date to the YAML header. See here for information about how to specify dates in Quarto.\n\n\n Solution - fixed date \n\n---\ntitle: \"My first Quarto document\"\nauthor: \"Charlotte Soneson\"\ndate: \"2024-06-11\"\ndate-format: \"long\"\nformat: \n    html:\n        toc: true\n        theme: cosmo\n        embed-resources: true\n---\n\n\n\n Solution - using the date when the document is rendered (R code) \n\n---\ntitle: \"My first Quarto document\"\nauthor: \"Charlotte Soneson\"\ndate: \"`r Sys.Date()`\"\ndate-format: \"long\"\nformat: \n    html:\n        toc: true\n        theme: cosmo\n        embed-resources: true\n---\n\n\n\n Solution - using the date when the document is rendered (today quarto keyword, does not work in R Markdown) \n\n---\ntitle: \"My first Quarto document\"\nauthor: \"Charlotte Soneson\"\ndate: today\ndate-format: \"long\"\nformat: \n    html:\n        toc: true\n        theme: cosmo\n        embed-resources: true\n---\n\n\n\n\n\nThe body of the document\nBelow the YAML header, the rest of the .qmd document consists of a mix of regular text and code chunks. The text is formatted according to markdown syntax (see also this page). For example, headers (of different levels) are generated by prepending (different numbers of) hash symbols (#) to the header text:\n# Header 1\n## Header 2\n### Header 3\nBold text is obtained by adding __ or ** to each side of the text, and italic text is obtained by adding _ or * to each side of the text.\nCode chunks are generated with the following syntax:\n```{r}\nx &lt;- 1 + 1\n```\n\n\n\n\n\n\nTip\n\n\n\nOn a Swiss QWERTZ keyboard, the backtick can be found here:  Source: https://superuser.com/questions/254076/how-do-i-type-the-tick-and-backtick-characters-on-windows\n\n\nThe {r} part indicates that the chunk contains R code. It is possible to use other engines (e.g., python or bash) by replacing the r in the chunk header (note that additional packages, as well as a functional python installation, may be required to, e.g., execute python code). Rather than explicitly typing the code chunk, we can use the keyboard shortcut Ctrl+Alt+I (or Cmd+Option+I on macOS) in RStudio. If we are using the Visual code editor in RStudio, chunks can be added by typing / and choosing the appropriate chunk type.\nIt is also useful to know that we can directly execute a line in a code chunk in the .qmd file by placing the cursor on the line and pressing Ctrl+Enter (or Cmd+Enter on macOS). A whole chunk can be executed by clicking on the little green arrow in the top right corner of the chunk. The grey arrow executes all chunks preceding the current chunk.\n\n\n\n\n\n\n\nPython/Visual Studio Code\n\n\n\n\n\nIn Visual Studio Code, we can execute a code chunk by clicking on the Run Cell arrow above the chunk:\n\nWe can also use Ctrl + Enter (Cmd + Enter on macOS) or Shift + Enter to execute the chunk in an interactive python session.\n\n\n\nWe can also include inline R code, enclosed in single backticks: `{r} x + 1` (as for the code chunks, we can use different code engines here as well). This is useful e.g. if we want to refer to values of specific variables directly in the text. A frequent use of this syntax can be seen in the YAML header above - see how the current date was obtained by executing the R function Sys.Date().\n\n\n\n\n\n\nExercise\n\n\n\nLet’s now practice what we just learned. In your example .qmd document, add a suitable header and a code chunk where you print the first six rows of the built-in iris dataset. Below the code chunk, add a sentence where you include the number of observations (rows) in the iris dataset.\n\n\n\n\n\n\n\n\nPython/Visual Studio Code\n\n\n\n\n\nIn python, the iris dataset is provided via the scikit-learn package:\n```{python}\nfrom sklearn import datasets\niris = datasets.load_iris()[\"data\"]\n```\n\n\n\n\n\nCustomizing code chunks\nIn addition to the language indicator, there are many other ways of customizing code chunks with so called ‘chunk options’. For example, we can decide whether the code should be evaluated at all, whether the code should be shown or hidden in the final report, and the size of any figures generated by the code. We can also add captions and alt-text for any displayed figures, for increased accessibility. Chunk options are specified inside the chunk, preceded by #|. For example, the code in the following chunk will be printed, but not executed:\n```{r}\n#| echo: true\n#| eval: false\n\n1 + 1\n```\nFor additional controls related to chunk execution, see this page. The options can also be set globally in the YAML header, under the execute directive. Specifications in a given chunk will override the global settings.\nIt is often useful to assign labels to the chunks. This makes it easier to navigate the document and find the source of any errors, and additionally means that any output figures generated in the document will be named according to the chunk where they were generated. In RStudio, you can navigate between sections and chunks in the lower left corner of the editor panel:\n\nTo label a chunk, add a suitable name as an option:\n```{r}\n#| label: addition_chunk\n\n1 + 1\n```\n\n\nMarkdown editing modes\nAbove, we opened and interacted with the .qmd document in ‘Source’ mode. However, RStudio (version 1.4 and newer) also allows us to view and edit the document in ‘Visual’ mode. In RStudio, we can switch mode by clicking on the corresponding button above the document:\n\nThis can also be selected in the dialog box when the file is initially created.\n\n\n\n\n\n\nPython/Visual Studio Code\n\n\n\n\n\nIn Visual Studio Code, we can switch mode by clicking on the three dots to the right of the Preview button, and choosing ‘Edit in Visual Mode’.\n\n\n\nIn ‘Visual’ mode, we can edit the document in a perhaps more intuitive way (or, at least, in a way that is more similar to the final rendered version). For example, adding headers can now be done by selecting the desired header level from a dropdown menu. We can swap between the two editing modes at any time. This can also be helpful in order to learn the markdown syntax for specific formatting options.\n\n\nParameterized reports\nSometimes, we have a template .qmd file from which we would like to generate multiple output files, each with a different value of a given parameter. Instead of generating a separate .qmd file for each of these parameter values, we can make use of so called parameterized reports. To parameterize your .qmd file, add a section in the YAML header defining the parameters that will be used, and provide a default value:\n---\ntitle: \"My first Quarto document\"\nauthor: \"Charlotte Soneson\"\ndate: \"`r Sys.Date()`\"\ndate-format: \"long\"\nformat: \n    html:\n        toc: true\n        theme: cosmo\n        embed-resources: true\nparams:\n    species: \"setosa\"\n---\nYou can then use the parameter anywhere in the document via the R syntax params$species. Any number of parameters can be specified in this way. Now, if the document is rendered via the Render button, the default value of each parameter will be used. To change the value, use the quarto_render() function from the quarto R package and specify the desired parameter values via the execute_params argument:\n\nquarto::quarto_render(\"qmd-example.qmd\", \n                      execute_params = list(species = \"virginica\"))\n\nWe can also set the name of the output file (we may want this to reflect the parameter value):\n\nquarto::quarto_render(\"qmd-example.qmd\", \n                      execute_params = list(species = \"virginica\"),\n                      output_file = \"virginica_report.html\")\n\n\n\n\n\n\n\nPython/Visual Studio Code\n\n\n\n\n\nThe Jupyter engine uses a different formulation of parameters than the knitr engine. With Jupyter, we create a chunk with the tag “parameters”, where we specify the parameter values\n```{python}\n#| tags: [parameters]\n\nspecies = \"setosa\"\n```\nThese parameters are then available in the top-level environment. To change the parameters, we render the document from the command line:\n\nquarto render qmd-example.qmd -P species:virginica\n\nNote that this requires the papermill package.\n\n\n\n\n\n\n\n\n\nExercise\n\n\n\nTo practice this, let’s create a parameterized report where instead of printing the size of the entire iris dataset as we did above, we only print out the number of observations from the indicated species.\n\n\n\n\nImages\nImages can be included in .qmd files using the following syntax:\n![](path/to/image.png)\nAlternatively, we can use knitr:\n```{r}\nknitr::include_graphics(\"path/to/image.png\")\n```\nOr directly HTML:\n&lt;img src=\"path/to/image.png\" width=\"90%\"/&gt;\n\n\nSession info\nIn order to keep a record of the package versions used to generate a given output file, it is useful to include a code chunk providing the session information in the end of every .qmd file. Add the following to your example .qmd:\n```{r}\nsessionInfo()\n```\nAs a bonus, with a bit of HTML, we can even make it collapsible, to take less space but still be available if requested.\n&lt;details&gt;\n&lt;summary&gt;&lt;b&gt;\nSession info\n&lt;/b&gt;&lt;/summary&gt;\n```{r}\nsessionInfo()\n```\n&lt;/details&gt;\n\n\n\n\n\n\nPython/Visual Studio Code\n\n\n\n\n\nIn python, we can print a session information using the session_info package.\n```{python}\nimport session_info\nsession_info.show()\n```\n\n\n\n\n\nAssembling figure panels within R\nUsing the workflow described above, we have a way to reproducibly generate figure panels starting from a suitably processed input data file. In this section, we will see how we can combine these panels into complete figures, which can be directly inserted into your manuscript. For this we will use the patchwork R package. This is not the only R package that allows this type of workflow - you can also have a look at cowplot. In python, there is a corresponding package patchworklib.\nThe idea behind these packages is that we create the individual figure panels as usual, and the use the capabilities of (e.g.) patchwork to assemble the panels in a suitable configuration.\nLet’s look at an example. We start by creating three plots, using the built-in iris data set.\n\nlibrary(ggplot2)\n(p1 &lt;- ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) + \n    geom_point(size = 3, aes(color = Species)) + \n    theme_bw())\n\n\n\n\n\n\n\n(p2 &lt;- ggplot(iris, aes(x = Sepal.Length)) + \n    geom_histogram(bins = 15) + \n    theme_bw())\n\n\n\n\n\n\n\n(p3 &lt;- ggplot(iris |&gt; dplyr::mutate(index = seq_along(Petal.Length)), \n              aes(x = index, y = Sepal.Length)) + \n    geom_line() + \n    theme_bw())\n\n\n\n\n\n\n\n\nNext, we combine them into a single figure using patchwork. The | symbol is used when we want panels to appear next to each other, in the same row. The / symbol is used when we want panels to appear underneath each other, in the same column. patchwork will do its best to align the axes of the different panels as well as possible, to provide a nice and clean visualization.\n\nlibrary(patchwork)\n(p1 | p2) / p3\n\n\n\n\n\n\n\n\npatchwork works with base plots as well as plots generated using ggplot2.\n\n(p1 | ~hist(iris$Sepal.Length)) / p3\n\n\n\n\n\n\n\n\nWe can also include pre-generated image files (e.g., in png format). This can be useful if we want to generate figures containing panels with schematics or other types of images that are not generated in R. One way to get such files into R and a format compatible with patchwork or cowplot is to use the ggdraw() and draw_image() functions from the cowplot package.\n\npuppy &lt;- cowplot::ggdraw() +\n    cowplot::draw_image(\"https://publicdomainvectors.org/photos/johnny_automatic_puppy.png\")\np1 | puppy\n\n\n\n\n\n\n\n\nWe can also add a shared title, a caption, and labels for the individual panels. In this way, it is often possible to reproducibly generate figures that can be directly used in a publication.\n\np &lt;- (p1 | p2) / p3\np + plot_annotation(\n    title = \"Some plots for the iris data set\",\n    caption = \"Here we can put source information\",\n    tag_levels = 'A'\n) & \n    theme_minimal()\n\n\n\n\n\n\n\n\nMany more examples and guidance can be found on the patchwork website.\n\n\nReproducible publishing with journal templates\nSo far, we have seen how we can write reports and generate complete figures in a reproducible way. This type of reports could, for example, be used as supplementary material for a manuscript. To generate the actual manuscript file, we would still need to paste the results and the generated figures into the Word document that will be submitted to the journal. However, Quarto also provides journal templates for several journals, which means that we can directly write our paper using literate programming, and submit the resulting Word/LaTeX/pdf file to the journal. If your favorite journal does not already have a template, you can also create your own. The setup makes it easy to change between different journal styles, still using the same underlying source file. This approach works well for “not-too-computational” manuscripts, where all computations can be run in a single file, and are sufficiently quick that it is not a problem to rerun them each time anything in the manuscript changes.\nLet’s try this out - we’ll create an example journal article, using the style from the PLOS family of journals. Typing the following code into a terminal window will initialize a new .qmd file following this journal template style:\n\nquarto use template quarto-journals/plos\n\nThe resulting file can then be edited and expanded upon like any other Quarto file. If you just want to install the journal format extension (without creating a new document), e.g. to use it in an existing document, you can do that by running the following code from within the target directory:\n\nquarto add quarto-journals/plos\n\n\n\nQuarto Manuscripts\nAn even more comprehensive toolbox for publishing manuscripts is provided by the Quarto Manuscripts framework. Here, each Quarto manuscript is its own Quarto project (not just a single file). The manuscript will be rendered in multiple formats, which can all be accessed via a generated website. Separate notebooks can also be used as a source of content and computations. Thus, this approach, while more complex than what we have seen before, is really aimed at producing fully reproducible manuscripts for projects involving lots of computation, perhaps in different languages, which can not all be re-executed every time the manuscript text changes.\nAn example can be seen here. To initialize such a manuscript, we have to create a Quarto project. This can be done from the command line as follows:\n\nquarto create project manuscript my_awesome_manuscript\n\nThis will create a Quarto project in a new folder named my_awesome_manuscript, and you can further choose to open it in either RStudio or Visual Studio Code.\n\n\nFinal tips\n\nAlways include the session info.\nAvoid hardcoded absolute paths, they will make it impossible for someone else to reproduce your analysis.\nWith parameterized reports, it’s helpful to print out the values of the parameters somewhere in the report for reproducibility purposes, as the final report may have been generated from the command line with parameter values different from the default ones contained in the source file.\n\n\n\nConclusion\nIn this workshop, we have seen how we can use Quarto to generate reproducible reports containing both text, code and output. Of course this is not the only way to make analyses reproducible - done correctly, a regular script can be just as reproducible. One nice aspect of literate programming, however, is that you can be sure that if the document compiles, the code actually works, you will see exactly how each figure was generated, and there is no way to ‘leave out’ or miss any details. With a script, you need some level of trust that this was, in fact, the code that was used to generate the saved figures. In addition, there are many other aspects that are essential for reproducibility that we have not touched upon here, including making all data accessible, and if possible providing a reproducible software environment (for example, using conda environments or docker images).\n\n\nResources\n\nRStudio keyboard shortcuts\nQuarto webpage\nQuarto introductory tutorial\nQuarto authoring guide\nMore details about article layout in Quarto\nR Markdown cheat sheet from RStudio\nR Markdown reference guide\nR Markdown crash course\nR Markdown website\nLessons on R Markdown\nR Markdown - the definitive guide\nR Markdown cookbook\nBlog post on Quarto vs Rmarkdown\nQuarto/R Markdown - what’s different\nQuarto extensions - journal articles\nReproducible manuscripts with Quarto (talk by JJ Allaire)\nQuarto webR extension for building interactive websites\nHello Quarto! Keynote from rstudio::conf(2022)\nQuarto introduction in R4DS book\nA Primer on dynamic reporting\nReproducible manuscripts with Quarto (talk by Mine Cetinkaya-Rundel)\n\n\n\n\n\nReuseDistributed under CC-BY license"
+  },
+  {
+    "objectID": "registration-coming-soon.html",
+    "href": "registration-coming-soon.html",
+    "title": "Registration will open 1st February, 2025",
+    "section": "",
+    "text": "TBA.\nThe course fees include participation in the lectures, the computer tutorials and all other events: coffee breaks, Wednesday’s social programme and dinner, course material. Lunch is not included.\nPlaces are awarded on a first-come, first-served basis. In previous years the course was sold out.\n\n\n\nCancellation of registration must be submitted in writing or via email and is valid only with acknowledgement of receipt.\nCancellation fees are dependent on the notice given:\nIf cancellation occurs less than 14 days prior to the start of the event, the cancellation fee is 100% of the registration fee. If cancellation occurs between 14 days and 1 month prior to the start of the event, the cancellation fee is 50% of the registration fee. Earlier than 1 month, a cancellation fee of EUR 70 will be charged. If payment has been made by the payment deadline of the event and a visa is not awarded in time to travel to the event, the full registration fee will be reimbursed. Evidence about the visa application will be requested. All applicable refunds will be issued following the close of the event. A refund will be returned via bank transfer.\nSpeakers and programme agenda are subject to change."
+  },
+  {
+    "objectID": "registration-coming-soon.html#course-fees",
+    "href": "registration-coming-soon.html#course-fees",
+    "title": "Registration will open 1st February, 2025",
+    "section": "",
+    "text": "TBA.\nThe course fees include participation in the lectures, the computer tutorials and all other events: coffee breaks, Wednesday’s social programme and dinner, course material. Lunch is not included.\nPlaces are awarded on a first-come, first-served basis. In previous years the course was sold out."
+  },
+  {
+    "objectID": "registration-coming-soon.html#cancellation-and-refund-policy",
+    "href": "registration-coming-soon.html#cancellation-and-refund-policy",
+    "title": "Registration will open 1st February, 2025",
+    "section": "",
+    "text": "Cancellation of registration must be submitted in writing or via email and is valid only with acknowledgement of receipt.\nCancellation fees are dependent on the notice given:\nIf cancellation occurs less than 14 days prior to the start of the event, the cancellation fee is 100% of the registration fee. If cancellation occurs between 14 days and 1 month prior to the start of the event, the cancellation fee is 50% of the registration fee. Earlier than 1 month, a cancellation fee of EUR 70 will be charged. If payment has been made by the payment deadline of the event and a visa is not awarded in time to travel to the event, the full registration fee will be reimbursed. Evidence about the visa application will be requested. All applicable refunds will be issued following the close of the event. A refund will be returned via bank transfer.\nSpeakers and programme agenda are subject to change."
+  },
+  {
+    "objectID": "contacts.html",
+    "href": "contacts.html",
+    "title": "Contact",
+    "section": "",
+    "text": "For inquiries related to the registration, scientific program, organisation and certificates of attendance, please contact csama[at]stat.unipd.it\n\n\nDavide Risso, Department of Statistical Sciences, University of Padova.\nWolfgang Huber, European Bioconductor Society e.V. and European Molecular Biology Laboratory.\n\n\n\nElena Guzzonato, Department of Statistical Sciences, University of Padova.\nMaja Kazmierczak-Barthel, European Molecular Biology Laboratory."
+  },
+  {
+    "objectID": "contacts.html#summer-school-coordination",
+    "href": "contacts.html#summer-school-coordination",
+    "title": "Contact",
+    "section": "",
+    "text": "Davide Risso, Department of Statistical Sciences, University of Padova.\nWolfgang Huber, European Bioconductor Society e.V. and European Molecular Biology Laboratory."
+  },
+  {
+    "objectID": "contacts.html#summer-school-organisation",
+    "href": "contacts.html#summer-school-organisation",
+    "title": "Contact",
+    "section": "",
+    "text": "Elena Guzzonato, Department of Statistical Sciences, University of Padova.\nMaja Kazmierczak-Barthel, European Molecular Biology Laboratory."
+  },
+  {
+    "objectID": "travel-and-accommodation.html",
+    "href": "travel-and-accommodation.html",
+    "title": "How to get to Bressanone – Brixen",
+    "section": "",
+    "text": "Bressanone (or Brixen) is in the bilingual province of Bolzano (Bozen) at 500 meters of altitude, in the Italian Alps, close to the Dolomites.\n\n\nBressanone is on the international line between Munich (Germany) and Verona (Italy). Every train on this line stops in Bressanone. Moreover, there are many commuter connections from Innsbruck (Austria) and from Bolzano (Italy) to Bressanone.\nThe train from Verona P.ta Nuova to Bressanone takes about 2 hours, with frequent connections throughout the day. The train from Munich takes about 4 hours, with connections every 2 hours.\nItalian railways – German railways – Austrian railways\n\n\n\nSeveral airports have reasonable train connections to Bressanone:\n\nBolzano, Italy (BZO) 50 km (30 minutes by train)\nInnsbruck, Austria (INN) 80 km (1 hour by train)\nVerona, Italy (Valerio Catullo, VRN) 200 km\nMunich, Germany (Franz-Josef Strauss, MUC) 260 km (4 hours by train)\nVenezia, Italy (Marco Polo, VCE) 320 km\nMilano-Linate, Italy (LIN) 330 km\nMilano-Malpensa, Italy (MXP) 350 km\n\nThe closest large airport is Verona (Valerio Catullo) international airport. From Verona airport to the railway station Verona P.ta Nuova (see above) there is a frequent shuttle bus service throughout the day. From Verona to Bressanone it takes about 2 hours by train, and you have several trains per day (see above).\nAbout Munich: please do not confuse Munich’s main airport (Franz-Josef Strauss) with what Ryanair calls “Munich West” (Memmingen) – the latter is far out in the Allgäu, and it is not much fun coming from there by public transport; with a rental car, it is an option.\n\n\n\nYou need to make your booking directly. There are many hotels and holiday rental options in Brixen, check the usual websites (Südtirol Info, booking, tripadvisor, airbnb, fewo-direct, …). There is also a centrally located Youth Hostel. Many of the course organisers and participants will be in the following places, which are short walking distance from the course venue and Brixen downtown (in general, Brixen is very compact and walkable):\n\nHotel Gruener Baum (Albero Verde)\nHotel Goldene Krone\nHotel Elephant"
+  },
+  {
+    "objectID": "travel-and-accommodation.html#by-train",
+    "href": "travel-and-accommodation.html#by-train",
+    "title": "How to get to Bressanone – Brixen",
+    "section": "",
+    "text": "Bressanone is on the international line between Munich (Germany) and Verona (Italy). Every train on this line stops in Bressanone. Moreover, there are many commuter connections from Innsbruck (Austria) and from Bolzano (Italy) to Bressanone.\nThe train from Verona P.ta Nuova to Bressanone takes about 2 hours, with frequent connections throughout the day. The train from Munich takes about 4 hours, with connections every 2 hours.\nItalian railways – German railways – Austrian railways"
+  },
+  {
+    "objectID": "travel-and-accommodation.html#by-airplane",
+    "href": "travel-and-accommodation.html#by-airplane",
+    "title": "How to get to Bressanone – Brixen",
+    "section": "",
+    "text": "Several airports have reasonable train connections to Bressanone:\n\nBolzano, Italy (BZO) 50 km (30 minutes by train)\nInnsbruck, Austria (INN) 80 km (1 hour by train)\nVerona, Italy (Valerio Catullo, VRN) 200 km\nMunich, Germany (Franz-Josef Strauss, MUC) 260 km (4 hours by train)\nVenezia, Italy (Marco Polo, VCE) 320 km\nMilano-Linate, Italy (LIN) 330 km\nMilano-Malpensa, Italy (MXP) 350 km\n\nThe closest large airport is Verona (Valerio Catullo) international airport. From Verona airport to the railway station Verona P.ta Nuova (see above) there is a frequent shuttle bus service throughout the day. From Verona to Bressanone it takes about 2 hours by train, and you have several trains per day (see above).\nAbout Munich: please do not confuse Munich’s main airport (Franz-Josef Strauss) with what Ryanair calls “Munich West” (Memmingen) – the latter is far out in the Allgäu, and it is not much fun coming from there by public transport; with a rental car, it is an option."
+  },
+  {
+    "objectID": "travel-and-accommodation.html#hotel-information",
+    "href": "travel-and-accommodation.html#hotel-information",
+    "title": "How to get to Bressanone – Brixen",
+    "section": "",
+    "text": "You need to make your booking directly. There are many hotels and holiday rental options in Brixen, check the usual websites (Südtirol Info, booking, tripadvisor, airbnb, fewo-direct, …). There is also a centrally located Youth Hostel. Many of the course organisers and participants will be in the following places, which are short walking distance from the course venue and Brixen downtown (in general, Brixen is very compact and walkable):\n\nHotel Gruener Baum (Albero Verde)\nHotel Goldene Krone\nHotel Elephant"
+  },
+  {
+    "objectID": "lectures/day4.html",
+    "href": "lectures/day4.html",
+    "title": "Day 4",
+    "section": "",
+    "text": "Note\n\n\n\nWelcome to Day 4! Below you’ll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources."
+  },
+  {
+    "objectID": "lectures/day4.html#proteomics",
+    "href": "lectures/day4.html#proteomics",
+    "title": "Day 4",
+    "section": "📘 Mass spectrometry-based proteomics including single-cell",
+    "text": "📘 Mass spectrometry-based proteomics including single-cell\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day4.html#metabolomics",
+    "href": "lectures/day4.html#metabolomics",
+    "title": "Day 4",
+    "section": "📘 Mass spectrometry-based metabolomics",
+    "text": "📘 Mass spectrometry-based metabolomics\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day4.html#Spatial",
+    "href": "lectures/day4.html#Spatial",
+    "title": "Day 4",
+    "section": "📘 Statistical methods for spatial omics",
+    "text": "📘 Statistical methods for spatial omics\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day4.html#annotation",
+    "href": "lectures/day4.html#annotation",
+    "title": "Day 4",
+    "section": "📘 Bioconductor advanced topics: annotation resources, language interoperation",
+    "text": "📘 Bioconductor advanced topics: annotation resources, language interoperation\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day2.html",
+    "href": "lectures/day2.html",
+    "title": "Day 2",
+    "section": "",
+    "text": "Note\n\n\n\nWelcome to Day 2! Below you’ll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources."
+  },
+  {
+    "objectID": "lectures/day2.html#DE",
+    "href": "lectures/day2.html#DE",
+    "title": "Day 2",
+    "section": "📘 RNA-Seq differential expression",
+    "text": "📘 RNA-Seq differential expression\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day2.html#Dim-red",
+    "href": "lectures/day2.html#Dim-red",
+    "title": "Day 2",
+    "section": "📘 Dimension reduction: PCA and other low-dimensional embeddings",
+    "text": "📘 Dimension reduction: PCA and other low-dimensional embeddings\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day2.html#sceRNA",
+    "href": "lectures/day2.html#sceRNA",
+    "title": "Day 2",
+    "section": "📘 Single-cell RNA-seq: exploration, quality control, low-dimensional embeddings",
+    "text": "📘 Single-cell RNA-seq: exploration, quality control, low-dimensional embeddings\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day2.html#ATAC",
+    "href": "lectures/day2.html#ATAC",
+    "title": "Day 2",
+    "section": "📘 Chromatin accessibility and ATAC-seq",
+    "text": "📘 Chromatin accessibility and ATAC-seq\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day1.html",
+    "href": "lectures/day1.html",
+    "title": "Day 1",
+    "section": "",
+    "text": "Note\n\n\n\nWelcome to Day 1! Below you’ll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources."
+  },
+  {
+    "objectID": "lectures/day1.html#intro",
+    "href": "lectures/day1.html#intro",
+    "title": "Day 1",
+    "section": "📘 Introduction to Bioconductor",
+    "text": "📘 Introduction to Bioconductor\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day1.html#transcriptomics",
+    "href": "lectures/day1.html#transcriptomics",
+    "title": "Day 1",
+    "section": "📘 What do we aim to measure and why: Applications in transcriptomics",
+    "text": "📘 What do we aim to measure and why: Applications in transcriptomics\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day1.html#Regression",
+    "href": "lectures/day1.html#Regression",
+    "title": "Day 1",
+    "section": "📘 Regression: randomness and linear models",
+    "text": "📘 Regression: randomness and linear models\n🔗 Open slides"
+  },
+  {
+    "objectID": "lectures/day1.html#HT",
+    "href": "lectures/day1.html#HT",
+    "title": "Day 1",
+    "section": "📘 Hypothesis testing",
+    "text": "📘 Hypothesis testing\n🔗 Open slides\n📖 Further reading:\nModern Statistics for Modern Biology – Chapter 6: Hypothesis testing"
+  }
+]

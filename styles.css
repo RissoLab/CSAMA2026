@@ -1,0 +1,22 @@
+/* css styles */
+.navbar-logo {
+  max-height: 75px;
+}
+
+.title {
+  font-size: 3em;
+  font-style: bold;
+  text-align: right;
+}
+
+.subtitle {
+  font-size: 1.8em;
+  font-style: bold;
+  font-variant: small-caps;
+  text-align: right;
+}
+
+img{
+    width:100%;
+    max-width:600px;
+}
