@@ -1,0 +1,111 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+  - lab/1_intro-to-r-bioc/**
+  - lectures/metabolomics-overview.html
+  - lab/9_multi/**
+
+website:
+  title: "CSAMA 2025 Biological Data Science"
+  open-graph:
+     locale:
+       en_US
+     site-name:
+       "CSAMA 2025"
+  navbar:
+    title: false
+    background: "#1a81c2"
+    foreground: "white"
+    logo: "images/CSAMA2025.png"
+    search: true
+    right:
+      - href: index.qmd
+        text: Home
+      - href: programme.qmd
+        text: Programme
+      - text: Lectures
+        menu:
+          - href: lectures/day1.qmd
+            text: Day 1
+          - href: lectures/day2.qmd
+            text: Day 2
+          - href: lectures/day3.qmd
+            text: Day 3
+          - href: lectures/day4.qmd
+            text: Day 4
+          - href: lectures/day5.qmd
+            text: Day 5
+          - href: lectures/links.qmd
+            text: Useful resources
+      - text: Labs
+        menu:
+          - href: lab/1_intro-to-r-bioc/lab-1-intro-to-r-bioc.html
+            text: Intro to R and Bioconductor
+          - href: lab/2_quarto-intro/2_quarto-intro.qmd
+            text: Intro to Quarto
+          - href: lab/3_regression/randomness_and_linear.html
+            text: Regression
+          - href: lab/4_bulk-rnaseq/rnaseqGene_CSAMA2025.html
+            text: Bulk RNA-seq analysis
+          - href: lab/5_single-cell-rnaseq/eda_qc.html
+            text: ScRNA-seq EDA
+          - href: lab/5_single-cell-rnaseq/cell_type_annotation.html
+            text: ScRNA-seq Annotation
+          - href: lab/6_bulk-atacseq/fluent-genomics-v2.html
+            text: Bulk ATAC-seq analysis
+          - href: lab/7_prot/proteom.qmd
+            text: R for Mass Spectrometry
+          - href: lab/8_metab/Metabonaut.qmd
+            text: End-to-end Metabolomics workflow
+          - href: lab/9_multi/9_multi.html
+            text: Multi-condition single cell RNA-seq differential analysis
+          - href: lab/10_Tidyomics.qmd
+            text: "Intro to Tidyomics: tidy data analysis applied to omics data"
+          - href: lab/11_spatial/spatial.qmd
+            text: Spatial Transcriptomics
+          - href: lab/12_Trajectory.qmd
+            text: Trajectory analysis
+          - href: lab/13_iSEE.qmd
+            text: Interactive exploration with iSEE
+          - href: lab/14_Image.qmd
+            text: Working with Image Data
+      - href: registration.qmd
+        text: Registration
+      - href: venue.qmd
+        text: Venue
+      - href: travel-and-accommodation.qmd
+        text: Travel and Accommodation
+      - href: code.qmd
+        text: Code of Conduct
+      - href: contacts.qmd
+        text: Contacts
+      - href: installation.qmd
+        text: Installation
+  page-footer: 
+    left: "Copyright (c) 2025, European Bioconductor Society e.V. </br>
+  The European Bioconductor Society e.V. is 
+  a registered association in Germany created to support 
+  Bioconductor's mission to promote open source software 
+  in the life sciences and statistics."
+  favicon: "images/CSAMA2025.png"
+  image: "images/CSAMA2025.png"
+
+format:
+  html:
+    theme:
+      - materia
+    css: styles.css
+    linkcolor: "#2A57A3"
+    toc-color: "#2A57A3"
+    toc: true
+    grid:
+      sidebar-width: 150px
+      body-width: 750px
+      margin-width: 300px
+    date-format: iso
+    include-in-header:
+      - text: |
+          <meta http-equiv="Cache-Control" content="max-age=1800, must-revalidate"> 
+    lightbox: true
+    

@@ -1,0 +1,37 @@
+---
+title: "Day 2"
+subtitle:  "Tue 8 July"
+format: html
+---
+
+
+::: {.callout-note}
+Welcome to Day 2! Below you'll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources.
+:::
+
+---
+
+## 📘 RNA-Seq differential expression {#DE}
+
+🔗 [Open slides](https://drive.google.com/file/d/1m-wJogJuCtjNIy_N9iEry_HnaJ8CoDHD/view?usp=drive_link)
+
+---
+
+## 📘 Dimension reduction: PCA and other low-dimensional embeddings {#Dim-red}
+
+🔗 [Open slides](https://github.com/rgentlem/PCA-lecture/blob/main/PCA.html)
+
+---
+
+## 📘 Single-cell RNA-seq: exploration, quality control, low-dimensional embeddings {#sceRNA}
+
+🔗 [Open slides](https://drive.google.com/file/d/1loa3BLac2vPtu-tFETduXxrCmOsePmeL/view?usp=drive_link)
+
+---
+
+## 📘 Chromatin accessibility and ATAC-seq {#ATAC}
+
+🔗 [Open slides](https://docs.google.com/presentation/d/152d9DAGPmqQDV0Vxq4DK1me56PhBvxNRiqS1ACmh_TQ/edit?usp=sharing)
+
+---
+

@@ -1,0 +1,39 @@
+---
+title: "Day 1"
+subtitle: "Mon 7 July"
+format: html
+---
+
+::: {.callout-note}
+Welcome to Day 1! Below you'll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources.
+:::
+
+---
+
+## 📘 Introduction to Bioconductor {#intro}
+
+🔗 [Open slides](https://drive.google.com/file/d/1uFPuOCo-3ZqaTmSXpasWLPtL5YhYNxEw/view?usp=drive_link)
+
+---
+
+## 📘 What do we aim to measure and why: Applications in transcriptomics {#transcriptomics}
+
+🔗 [Open slides](https://bit.ly/csama-rna-seq-intro)
+
+---
+
+## 📘 Regression: randomness and linear models {#Regression}
+
+🔗 [Open slides](https://bioconductor.github.io/CSAMA-labs/regression/randomness_and_linear.html)
+
+---
+
+## 📘 Hypothesis testing {#HT}
+
+🔗 [Open slides](https://docs.google.com/presentation/d/13S3A2gWKo0noX0nFIIJIfqKGsUBgTMnGLzLH9D8_c4g/edit?usp=sharing)
+
+
+**📖 Further reading:**  
+[Modern Statistics for Modern Biology – Chapter 6: Hypothesis testing](https://www.huber.embl.de/msmb/06-chap.html)
+
+---

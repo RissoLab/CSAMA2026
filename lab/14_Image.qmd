@@ -1,0 +1,9 @@
+---
+title: "Working with Image Data"
+format: html
+---
+
+## 🔗 Open the Lab File  
+[Click here to access the lab](https://github.com/wolfganghuber/WorkingWithImageData)
+
+

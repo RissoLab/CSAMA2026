@@ -1,0 +1,25 @@
+---
+title: "Day 3"
+subtitle:  "Wed 9 July"
+format: html
+---
+
+::: {.callout-note}
+Welcome to Day 3! Below you'll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources.
+:::
+
+## 📘 Distances, nearest-neighbour graphs and clustering {#NNG}
+
+Materials coming soon.
+
+## 📘 Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping {#scRNA-adv}
+
+🔗 [Open slides](https://drive.google.com/file/d/1fVtabaDMzThY92MqD3igHH-7JAHVGC-X/view?usp=sharing)
+
+## 📘 Multi-condition single cell RNA-seq II: when is the right time to categorize? {#scRNA-DEA}
+
+🔗 [Open slides](https://docs.google.com/presentation/d/16eELRfthxSorWfFwP98m6H36qeUrz1lzpxDPYnzq3PA/edit?usp=sharing)
+
+## 📘 Introduction to spatial omics 
+
+🔗 [Open slides](https://drive.google.com/file/d/10ifLrtgMaTc_dXcaT4uDDPMxAyF6kAx2/view?usp=drive_link)

@@ -1,0 +1,7 @@
+---
+title: "Proteomics"
+format: html
+---
+
+## 🔗 Open the Lab File  
+[Click here to access the lab](https://rformassspectrometry.github.io/book/)

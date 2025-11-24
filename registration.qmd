@@ -1,0 +1,31 @@
+# Registration is now open!
+
+In order to register, each participant needs to fill in the form at the following link and complete the payment. Please include your contact email and name, you will receive the payment details by email.
+
+[**Register here!**](https://apex.cca.unipd.it/pls/apex/f?p=308:2:::NO:2:P_MERCHID,P_LANG:345,USA)
+
+If you are unsure about which participant category you belong to, if you have special requirements for you invoice, or for any other reason, please contact us at csama\[at\]stat.unipd.it. We will guide you through registration.
+
+## Course fees
+
+| Registration type     | Description                                                        | Summer School Fee | Accommodation (optional) |
+|----------------|------------------------|----------------|----------------|
+| Junior Researcher     | Undergraduate or postgraduate students and postdocs                | 1070 €            | 210 €                    |
+| Academic / Non-profit | Senior researchers from academic and other non-profit institutions | 1500 €            | N/A                      |
+| Industry              | Researchers from the commercial sector                             | 2500 €            | N/A                      |
+
+The course fees include participation in the lectures, the computer tutorials and all other events: coffee breaks and lunch, Wednesday’s social programme and dinner, course material.
+
+Places are awarded on a first-come, first-served basis. In previous years the course was sold out.
+
+Optional accommodation is available only for junior researchers in shared double rooms at the venue (check-in: Sunday, check-out: Saturday). Note that there is a limited number of rooms available and they will be awarded on a first-come, first-served basis. Alternatively, students can book their own accommodation (see hotel information [here](https://csama2024.bioconductor.eu/travel-and-accommodation/)).
+
+## Cancellation and Refund policy
+
+Cancellation of registration must be submitted in writing or via email and is valid only with acknowledgement of receipt.
+
+Cancellation fees are dependent on the notice given:
+
+If cancellation occurs less than 14 days prior to the start of the event, the cancellation fee is 100% of the registration fee. If cancellation occurs between 14 days and 1 month prior to the start of the event, the cancellation fee is 50% of the registration fee. Earlier than 1 month, a cancellation fee of EUR 70 will be charged. If payment has been made by the payment deadline of the event and a visa is not awarded in time to travel to the event, the full registration fee will be reimbursed. Evidence about the visa application will be requested. All applicable refunds will be issued following the close of the event. A refund will be returned via bank transfer.
+
+Speakers and programme agenda are subject to change.

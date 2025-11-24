@@ -1,0 +1,74 @@
+This page contains important instructions that you should follow before arriving at the course.
+
+Due to the limited Internet connectivity at the course venue, it is necessary that you install all required software on your laptop before arriving. Because of the range of topics covered in the course you will need to download a large number of packages, so it is really helpful to do this in advance. To do so, please follow these steps.
+
+# R and RStudio setup:
+
+1.  Please install the current release version of R (version 4.5.1). For more instructions, please check [https://cran.r-project.org/](https://cran.r-project.org/)
+
+2.  Please install and set up Git. Jenny Bryan has some excellent instructions available at [http://happygitwithr.com/install-git.html](http://happygitwithr.com/install-git.html)
+
+If you are using Windows we recommend Git-For-Windows [https://git-for-windows.github.io/](https://git-for-windows.github.io/) and if you are using a Mac our suggestion is Git-SCM [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+3.  Install a recent version of RStudio. Instructions are available here: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+
+4a. (ONLY FOR WINDOWS USERS) Download and install Rtools, available from: [https://cran.r-project.org/bin/windows/Rtools/rtools45/rtools.html](https://cran.r-project.org/bin/windows/Rtools/rtools45/rtools.html) If you have RStudio open you should close RStudio and start it again after you have finished the installation. This allows the changes to take effect.
+
+4b. (ONLY FOR LINUX USERS) If you use Linux it is likely you will need to install some additional system libraries. An example installation of the required libraries for Ubuntu 20.04 can be found at [https://csama2025.bioconductor.eu/installation_script/linux_libraries.sh](installation_script/linux_libraries.sh) You may need to adjust this for your own Linux distribution. In our experience, it is best to move to the next step and return here only if needed.
+
+5.  After installing all of the above, please open RStudio and copy the line below into your R prompt:
+
+
+```{r}
+#| eval: false
+#| include: true
+source("https://raw.githubusercontent.com/RissoLab/CSAMA2025/refs/heads/main/installation_script/install_packages.R")
+
+```
+
+The script will check if you have the versions of R, Bioconductor and RStudio that are required for the course. The script will also install the R/Bioconductor packages needed for the course. The script might trigger a question about whether you would like to update old packages, please select the option to update “all”. It will also download several datasets used during the course, and may prompt you to create new folders. It is safe to use the default options here. This process may take a long time, but it is generally OK to leave it running after the installation has started. The list of packages may be updated nearer to the start date, so it is worth running this script several times in the build up to the course.
+
+# Docker setup
+
+To ensure smooth execution of some labs and avoid network overload at the venue, please complete the following steps before arriving:
+
+## 1. Install Docker
+
+If you haven’t done so already, install Docker on your machine:  
+[https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
+
+## 2. Download the required Docker images
+
+### Spatial Transcriptomics lab
+
+- Image: `robertclab/upf_mscbinf_ieo_spatialomics`
+- Pull the image on your terminal:
+```bash
+docker pull robertclab/upf_mscbinf_ieo_spatialomics
+```
+
+- Run the container with the following command:
+
+```bash
+docker run -d -p 8787:8787 -e PASSWORD=ieo --rm robertclab/upf_mscbinf_ieo_spatialomics
+```
+Then open the following link in your browser:
+[https://localhost:8787](https://localhost:8787)
+
+- Username: rstudio
+- Password: ieo
+
+### Metabolomics lab
+- Image: `rformassspectrometry/metabonaut:latest`
+- Pull the image on your terminal:
+```bash
+docker pull rformassspectrometry/metabonaut:latest
+```
+
+## In case of errors
+
+If you encounter any errors, please pay close attention to the messages displayed, they may contain further instructions.
+
+For questions regarding software installation, please contact Ilaria Billato.
+
+We also have a Slack channel for the course [https://CSAMA2025.slack.com/](https://CSAMA2025.slack.com/) where you can ask support questions and meet fellow course participants.

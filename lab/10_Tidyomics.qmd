@@ -1,0 +1,8 @@
+---
+title: "Intro to Tidyomics: tidy data analysis applied to omics data"
+format: html
+---
+
+## 🔗 Open the Lab File  
+[Click here to access the lab](https://tidyomics.github.io/tidy-intro-talk/)
+

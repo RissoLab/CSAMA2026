@@ -1,0 +1,26 @@
+---
+title: "Day 4"
+subtitle:  "Thu 10 July"
+format: html
+---
+
+::: {.callout-note}
+Welcome to Day 4! Below you'll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources.
+:::
+
+## 📘 Mass spectrometry-based proteomics including single-cell {#proteomics}
+
+🔗 [Open slides](http://bit.ly/CSAMA2025)
+
+
+## 📘 Mass spectrometry-based metabolomics {#metabolomics}
+
+🔗 [Open slides](metabolomics-overview.html)
+
+## 📘 Statistical methods for spatial omics {#Spatial}
+
+🔗 [Open slides](https://drive.google.com/file/d/1uoz0XCUBf4Vn1UGmfgS_P3qERmF7XZuA/view?usp=sharing)
+
+## 📘  Bioconductor advanced topics: annotation resources, language interoperation {#annotation}
+
+🔗 [Open slides](https://drive.google.com/file/d/1SYlLnHgvcTOntOLD6nkIk9VoPKnGuljU/view?usp=sharing)

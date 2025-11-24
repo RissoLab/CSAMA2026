@@ -1,0 +1,25 @@
+
+# The 2025 programme is under development and will be updated soon
+
+Please see the [CSAMA 2024 Programme](https://csama2024.bioconductor.eu/programme/) for a previous example of the structure and content.
+
+## Tentative Lecture and Lab topics
+
+### Biological domains
+
+- RNA-Seq from sequences to analysis: mapping, quantification at gene and transcript level
+- Single cell (droplet based) RNA-seq: exploratory analysis, quality assessment
+- Mass spectrometry-based proteomics and metabolomics
+- Image-based data and spatial omics (CosMX, Xenium et al.)
+- *Emerging topics and participant suggestions*
+
+### Statistics and data science
+
+- Introduction to the Bioconductor project (community, infrastructure, data structures, annotation resources)
+- Visualization, including interactivity, PCA and other low-dimensional embeddings, clustering, distances, nearest-neighbour graphs
+- Statistical hypothesis testing, false discovery rate, multiple testing, filtering and weighting
+- Regression: experimental design and design matrices, power, identifiability, diagnostics, generalized linear models
+- Classification / supervised machine learning, multi-omic data integration methods
+- Data manipulation, EDA, and tidy data analysis, applied to high dimensional biological data
+- Reproducibility, best practices for computational research, method comparison, benchmarking
+- *Emerging topics and participant suggestions*

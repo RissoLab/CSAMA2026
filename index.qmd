@@ -1,0 +1,41 @@
+---
+title: </br> </br> CSAMA 2025  </br> Biological Data Science </br> </br>
+title-block-banner: images/csama2018_crop.jpeg
+subtitle: 21st Edition </br> 
+          Bressanone-Brixen, Italy </br>
+          6-11 July 2025
+---
+
+# Overview
+
+The one-week intensive summer school **Biological Data Science** teaches advanced computational analyses of modern molecular data types in biology and biomedicine, including single cell and spatial omics. It comprises lectures covering underlying theory and concepts, practical hands-on exercises, and informal discussion sessions. Lecture topics include modern biotechnologies for quantitative measurements, statistical analysis, visualisation, and computational tools. Hands-on exercises are looking at state-of-the-art datasets, using the R / Bioconductor environment. At the end of the course, you should be better able to design, implement and interpret analyses on your own (multi-)omic, single and/or spatial data, adapt and combine different tools, and make informed and scientifically sound choices about analysis strategies.
+
+# Faculty and Teaching Assistants
+
+| | | |
+| :--: | :--: | :--: |
+| ![Vince Carey](images/faculty/carey.jpeg){width=200}<br> **Vince Carey**<br> Harvard Medical School | ![Helena Crowell](images/faculty/crowell.jpeg){width=200}<br> **Helena Crowell**<br> CNAG Barcelona |  ![Laurent Gatto](images/faculty/gatto.jpg){width=200}<br> **Laurent Gatto**<br> UC Louvain |
+|  |  |  |
+| ![Robert Gentleman](images/faculty/gentleman.jpg){width=200}<br> **Robert Gentleman** | ![Wolfgang Huber](images/faculty/huber.jpg){width=200}<br> **Wolfgang Huber**<br> EMBL| ![Michael Love](images/faculty/love.jpg){width=200}<br> **Michael Love**<br> University of North Carolina |
+|  |  |  |
+| ![Johannes Rainer](images/faculty/rainer.jpeg){width=200}<br> **Johannes Rainer**<br> Eurac Research | ![Davide Risso](images/faculty/risso.jpeg){width=200}<br> **Davide Risso**<br> University of Padova | ![Charlotte Soneson](images/faculty/soneson.jpg){width=200}<br> **Charlotte Soneson**<br> Friedrich Miescher Institute for Biomedical Research |
+|  |  |  |
+| ![Ilaria Billato](images/faculty/billato.jpg){width=200}<br> **Ilaria Billato**<br> University of Padova | ![Philippine Louail](images/faculty/louail.jpg){width=200}<br> **Philippine Louail**<br> Eurac Research | ![Daria Lazic](images/faculty/lazic.jpg){width=200}<br> **Daria Lazic**<br> EMBL |
+| | | |
+
+::: {.column-margin}
+Organized in collaboration with <br><br><br>
+
+<a href="https://bioconductor.org/" target="_blank">
+<img  src="images/bioconductor_logo_cmyk.jpg" alt="Bioconductor" class="img-responsive" /> </a>
+
+<a href="https://www.stat.unipd.it/en" target="_blank">
+<img  src="images/stat_unipd_logo.jpg" alt="Department of Statistical Sciences" class="img-responsive"/> </a>
+
+<a href="https://www.unipd.it/en" target="_blank">
+<img  src="images/UNIPD_logo.png" alt="University of Padova" class="img-responsive" /> </a>
+
+<a href="https://www.embl.org/" target="_blank">
+<img  src="images/EMBL_logo.png" alt="University of Padova" class="img-responsive" /> </a>
+
+:::

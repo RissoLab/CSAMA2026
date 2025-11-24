@@ -1,0 +1,72 @@
+---
+title: "Useful Links and Resources"
+format: html
+---
+
+## 💼 Career & Research Advice
+
+- **Strategic career building during your PhD**:  
+  Adrian Liston, Lydia E. Makaroff  
+  ["Strategic career building during your PhD: a timeline for maximizing your opportunities"](https://onlinelibrary.wiley.com/doi/10.1111/imcb.12668)
+
+- Other papers by Adrian Liston:
+  - *Starting Your Independent Research Laboratory*
+  - *Nurturing a Positive Research Culture Within Your Laboratory*
+
+---
+
+## 🧭 Tools & Visualizations
+
+- [Sleepwalk – Interactive embedding exploration](https://anders-biostat.github.io/sleepwalk/)
+
+- [How GPT-3 works – Visualizations & animations](https://jalammar.github.io/how-gpt3-works-visualizations-animations/)
+
+- [Exploratory Data Analysis with LLMs](https://chiraaggohel.com/posts/llms-eda/)
+
+- [The Bullshit Machines – Critical take on AI](https://thebullshitmachines.com/)
+
+---
+
+## 📊 Statistical Concepts
+
+- **Anscombe’s Quartet extensions**:  
+  [Datasets constructed to highlight statistical illusions](https://stats.stackexchange.com/questions/80196/datasets-constructed-for-a-purpose-similar-to-that-of-anscombes-quartet)
+
+---
+
+## 🧬 Bioinformatics
+
+- **RNA velocity** (mentioned by Davide):  
+  ["Pumping the brakes on RNA velocity by understanding and interpreting RNA velocity estimates"](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03065-x)
+  
+---
+
+## 🧪 Annotation Working Group
+
+- [CHEUI – m6A and m5C modification identification from nanopore data](https://github.com/comprna/CHEUI)  
+  GitHub repo: `comprna/CHEUI`
+
+- [CSAMA Annotation Repository – by Vince Carey](https://github.com/vjcitn/CSAMA_annotation)  
+
+---
+
+## 🔬 Multi-omics-bulk Working Group
+
+- **Shared Google Doc with discussion notes**  
+  [Multi-omics summary and collaborative document](https://docs.google.com/document/d/1RHyM1oFmxOUkCbE-dAvhgOS4Nue8RQ8A6YBi_YdjGpo/edit?usp=sharing)
+
+---
+
+## 📦 R Packaging Working Group
+
+- [Bioconductor Package Submission Guidelines](https://contributions.bioconductor.org/bioconductor-package-submissions.html)
+- [R Package Development Walkthrough (Sonesson)](https://csoneson.github.io/PackagingLecture2024/packaging-code.html)
+- [PLOS CompBio summary of Bioconductor contributions](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012856)
+ 
+---
+
+## 📷 Photos
+
+- [Google Photos Album](https://photos.app.goo.gl/epZm6WksKSujuTxJ9)
+  
+**Feel free to add your photos!**

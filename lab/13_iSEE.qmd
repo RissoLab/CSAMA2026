@@ -1,0 +1,8 @@
+---
+title: "Interactive exploration with iSEE"
+format: html
+---
+
+## 🔗 Open the Lab File  
+[Click here to access the lab](https://csoneson.github.io/isee-lab-csama2024/)
+

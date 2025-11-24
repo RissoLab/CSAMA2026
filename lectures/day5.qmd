@@ -1,0 +1,22 @@
+---
+title: "Day 5"
+subtitle:  "Fri 11 July"
+format: html
+---
+
+::: {.callout-note}
+Welcome to Day 5! Below you'll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources.
+:::
+
+
+## 📘 Design of High Throughput Experiments and their Analysis {#Design}
+
+🔗 [Open slides](https://drive.google.com/file/d/1PWuyGaqf861mgjyh946ojYJZY4mcN1lz/view?usp=drive_link)
+
+## 📘 Machine learning {#ML}
+
+Materials coming soon.
+
+## 📘 Deep learning for digital pathology {#AI_1}
+
+🔗 [Open slides](http://bit.ly/40ffpBE)
