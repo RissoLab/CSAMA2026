@@ -7,17 +7,17 @@ project:
   - lab/9_multi/**
 
 website:
-  title: "CSAMA 2025 Biological Data Science"
+  title: "CSAMA 2026 Biological Data Science"
   open-graph:
      locale:
        en_US
      site-name:
-       "CSAMA 2025"
+       "CSAMA 2026"
   navbar:
     title: false
     background: "#1a81c2"
     foreground: "white"
-    logo: "images/CSAMA2025.png"
+    logo: "images/CSAMA2026.png"
     search: true
     right:
       - href: index.qmd
@@ -88,8 +88,8 @@ website:
   a registered association in Germany created to support 
   Bioconductor's mission to promote open source software 
   in the life sciences and statistics."
-  favicon: "images/CSAMA2025.png"
-  image: "images/CSAMA2025.png"
+  favicon: "images/CSAMA2026.png"
+  image: "images/CSAMA2026.png"
 
 format:
   html:
