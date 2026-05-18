@@ -107,11 +107,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="CSAMA 2026 Biological Data Science">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://csama2026.bioconductor.eu/images/CSAMA2026.png">
+<meta property="og:image" content="images/CSAMA2026.png">
 <meta property="og:site_name" content="CSAMA 2026">
 <meta property="og:locale" content="en_US">
-<meta property="og:image:height" content="600">
-<meta property="og:image:width" content="518">
 </head>
 
 <body class="nav-fixed">
@@ -162,6 +160,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./contacts.html"> 
 <span class="menu-text">Contacts</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./installation.html" aria-current="page"> 
+<span class="menu-text">Installation</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -184,8 +186,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#install-docker" id="toc-install-docker" class="nav-link" data-scroll-target="#install-docker">1. Install Docker</a></li>
   <li><a href="#download-the-required-docker-images" id="toc-download-the-required-docker-images" class="nav-link" data-scroll-target="#download-the-required-docker-images">2. Download the required Docker images</a>
   <ul class="collapse">
-  <li><a href="#spatial-transcriptomics-lab" id="toc-spatial-transcriptomics-lab" class="nav-link" data-scroll-target="#spatial-transcriptomics-lab">Spatial Transcriptomics lab</a></li>
   <li><a href="#metabolomics-lab" id="toc-metabolomics-lab" class="nav-link" data-scroll-target="#metabolomics-lab">Metabolomics lab</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#python-setup" id="toc-python-setup" class="nav-link" data-scroll-target="#python-setup">Python setup</a>
+  <ul class="collapse">
+  <li><a href="#option-a-condamamba" id="toc-option-a-condamamba" class="nav-link" data-scroll-target="#option-a-condamamba">Option A — conda/mamba</a>
+  <ul class="collapse">
+  <li><a href="#install-miniconda" id="toc-install-miniconda" class="nav-link" data-scroll-target="#install-miniconda">1. Install Miniconda</a></li>
+  <li><a href="#create-the-environment" id="toc-create-the-environment" class="nav-link" data-scroll-target="#create-the-environment">2. Create the environment</a></li>
+  <li><a href="#verify-the-setup-in-r" id="toc-verify-the-setup-in-r" class="nav-link" data-scroll-target="#verify-the-setup-in-r">3. Verify the setup in R</a></li>
+  </ul></li>
+  <li><a href="#option-b-uv" id="toc-option-b-uv" class="nav-link" data-scroll-target="#option-b-uv">Option B — uv</a>
+  <ul class="collapse">
+  <li><a href="#install-uv" id="toc-install-uv" class="nav-link" data-scroll-target="#install-uv">1. Install uv</a></li>
+  <li><a href="#create-the-environment-1" id="toc-create-the-environment-1" class="nav-link" data-scroll-target="#create-the-environment-1">2. Create the environment</a></li>
   </ul></li>
   <li><a href="#in-case-of-errors" id="toc-in-case-of-errors" class="nav-link" data-scroll-target="#in-case-of-errors">In case of errors</a></li>
   </ul></li>
@@ -203,7 +218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="r-and-rstudio-setup" class="level1">
 <h1>R and RStudio setup:</h1>
 <ol type="1">
-<li><p>Please install the current release version of R (version 4.5.1). For more instructions, please check <a href="https://cran.r-project.org/">https://cran.r-project.org/</a></p></li>
+<li><p>Please install the current release version of R (version 4.6.0). For more instructions, please check <a href="https://cran.r-project.org/">https://cran.r-project.org/</a></p></li>
 <li><p>Please install and set up Git. Jenny Bryan has some excellent instructions available at <a href="http://happygitwithr.com/install-git.html">http://happygitwithr.com/install-git.html</a></p></li>
 </ol>
 <p>If you are using Windows we recommend Git-For-Windows <a href="https://git-for-windows.github.io/">https://git-for-windows.github.io/</a> and if you are using a Mac our suggestion is Git-SCM <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
@@ -211,12 +226,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Install a recent version of RStudio. Instructions are available here: <a href="https://posit.co/download/rstudio-desktop/">https://posit.co/download/rstudio-desktop/</a></li>
 </ol>
 <p>4a. (ONLY FOR WINDOWS USERS) Download and install Rtools, available from: <a href="https://cran.r-project.org/bin/windows/Rtools/rtools45/rtools.html">https://cran.r-project.org/bin/windows/Rtools/rtools45/rtools.html</a> If you have RStudio open you should close RStudio and start it again after you have finished the installation. This allows the changes to take effect.</p>
-<p>4b. (ONLY FOR LINUX USERS) If you use Linux it is likely you will need to install some additional system libraries. An example installation of the required libraries for Ubuntu 20.04 can be found at <a href="installation_script/linux_libraries.sh">https://csama2025.bioconductor.eu/installation_script/linux_libraries.sh</a> You may need to adjust this for your own Linux distribution. In our experience, it is best to move to the next step and return here only if needed.</p>
+<p>4b. (ONLY FOR LINUX USERS) If you use Linux it is likely you will need to install some additional system libraries. An example installation of the required libraries for Ubuntu 22.04 can be found at <a href="installation_script/linux_libraries.sh">https://csama2026.bioconductor.eu/installation_script/linux_libraries.sh</a> You may need to adjust this for your own Linux distribution. In our experience, it is best to move to the next step and return here only if needed.</p>
 <ol start="5" type="1">
 <li>After installing all of the above, please open RStudio and copy the line below into your R prompt:</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"https://raw.githubusercontent.com/RissoLab/CSAMA2025/refs/heads/main/installation_script/install_packages.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"https://raw.githubusercontent.com/RissoLab/CSAMA2026/refs/heads/main/installation_script/install_packages.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The script will check if you have the versions of R, Bioconductor and RStudio that are required for the course. The script will also install the R/Bioconductor packages needed for the course. The script might trigger a question about whether you would like to update old packages, please select the option to update “all”. It will also download several datasets used during the course, and may prompt you to create new folders. It is safe to use the default options here. This process may take a long time, but it is generally OK to leave it running after the installation has started. The list of packages may be updated nearer to the start date, so it is worth running this script several times in the build up to the course.</p>
 </section>
@@ -230,37 +245,96 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="download-the-required-docker-images" class="level2">
 <h2 class="anchored" data-anchor-id="download-the-required-docker-images">2. Download the required Docker images</h2>
-<section id="spatial-transcriptomics-lab" class="level3">
-<h3 class="anchored" data-anchor-id="spatial-transcriptomics-lab">Spatial Transcriptomics lab</h3>
-<ul>
-<li>Image: <code>robertclab/upf_mscbinf_ieo_spatialomics</code></li>
-<li>Pull the image on your terminal:</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull robertclab/upf_mscbinf_ieo_spatialomics</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Run the container with the following command:</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-d</span> <span class="at">-p</span> 8787:8787 <span class="at">-e</span> PASSWORD=ieo <span class="at">--rm</span> robertclab/upf_mscbinf_ieo_spatialomics</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Then open the following link in your browser: <a href="https://localhost:8787">https://localhost:8787</a></p>
-<ul>
-<li>Username: rstudio</li>
-<li>Password: ieo</li>
-</ul>
-</section>
 <section id="metabolomics-lab" class="level3">
 <h3 class="anchored" data-anchor-id="metabolomics-lab">Metabolomics lab</h3>
 <ul>
 <li>Image: <code>rformassspectrometry/metabonaut:latest</code></li>
 <li>Pull the image on your terminal:</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull rformassspectrometry/metabonaut:latest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull rformassspectrometry/metabonaut:latest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Run the container with the following command:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-e</span> PASSWORD=bioc <span class="at">-p</span> 8787:8787 rformassspectrometry/metabonaut:latest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then open the following link in your browser: <a href="https://localhost:8787">https://localhost:8787</a></p>
+<ul>
+<li>Username: rstudio</li>
+<li>Password: bioc</li>
+</ul>
+<p>You can follow the pre-rendered version here:<a href="https://rformassspectrometry.github.io/Metabonaut/index.html">Metabonaut</a></p>
+</section>
+</section>
+</section>
+<section id="python-setup" class="level1">
+<h1>Python setup</h1>
+<section id="option-a-condamamba" class="level2">
+<h2 class="anchored" data-anchor-id="option-a-condamamba">Option A — conda/mamba</h2>
+<section id="install-miniconda" class="level3">
+<h3 class="anchored" data-anchor-id="install-miniconda">1. Install Miniconda</h3>
+<p>If you do not already have conda or mamba installed, download and install Miniconda for your platform: <a href="https://docs.anaconda.com/miniconda/">https://docs.anaconda.com/miniconda/</a></p>
+<p>Alternatively, you can install <a href="https://github.com/conda-forge/miniforge">Miniforge</a>, which includes <code>mamba</code> (a faster drop-in replacement for <code>conda</code>).</p>
+<p>On macOS with Homebrew, you can also run:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> miniconda</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> miniforge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="create-the-environment" class="level3">
+<h3 class="anchored" data-anchor-id="create-the-environment">2. Create the environment</h3>
+<p>Open a <strong>new</strong> terminal and run:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> segtraq python=3.11</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate segtraq</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install segtraq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you installed Miniforge, you can use <code>mamba</code> in place of <code>conda</code> in the commands above.</p>
+</section>
+<section id="verify-the-setup-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="verify-the-setup-in-r">3. Verify the setup in R</h3>
+<p>Open RStudio and run:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">use_condaenv</span>(<span class="st">"segtraq"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">import</span>(<span class="st">"segtraq"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If the last command runs without errors, you are all set.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Windows users
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If <code>use_condaenv("segtraq")</code> cannot find conda, you may need to specify the path to your conda binary before calling it:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">reticulate.conda_binary =</span> <span class="st">"C:/Users/YOURUSERNAME/miniconda3/condabin/conda.bat"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Replace the path with your actual Miniconda installation location.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="option-b-uv" class="level2">
+<h2 class="anchored" data-anchor-id="option-b-uv">Option B — uv</h2>
+<p><a href="https://docs.astral.sh/uv/">uv</a> is a fast Python package manager that does not require conda.</p>
+<section id="install-uv" class="level3">
+<h3 class="anchored" data-anchor-id="install-uv">1. Install uv</h3>
+<ul>
+<li>macOS (Homebrew): <code>brew install uv</code></li>
+<li>Linux/macOS: <code>curl -LsSf https://astral.sh/uv/install.sh | sh</code></li>
+<li>Windows: <code>powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"</code></li>
+</ul>
+<p>See <a href="https://docs.astral.sh/uv/getting-started/installation/">https://docs.astral.sh/uv/getting-started/installation/</a> for more options.</p>
+</section>
+<section id="create-the-environment-1" class="level3">
+<h3 class="anchored" data-anchor-id="create-the-environment-1">2. Create the environment</h3>
+<p>Navigate to a directory of your choice (e.g.&nbsp;a folder for the course materials) and run:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> venv .venv <span class="at">--python</span> 3.11</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip install segtraq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="in-case-of-errors" class="level2">
 <h2 class="anchored" data-anchor-id="in-case-of-errors">In case of errors</h2>
 <p>If you encounter any errors, please pay close attention to the messages displayed, they may contain further instructions.</p>
-<p>For questions regarding software installation, please contact Ilaria Billato.</p>
-<p>We also have a Slack channel for the course <a href="https://CSAMA2025.slack.com/">https://CSAMA2025.slack.com/</a> where you can ask support questions and meet fellow course participants.</p>
+<p>For questions regarding software installation, please contact Ilaria Billato, Hugo Gruson or Daria Lazic.</p>
+<p>We also have a Zulip channel for the course <a href="https://csama2026.zulipchat.com/join/l2cuegnbhy4hv2vwclks7hgt/">Zulip CSAMA 2026</a> where you can ask support questions and meet fellow course participants.</p>
 
 
 </section>
@@ -357,7 +431,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/csama2026\.bioconductor\.eu");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
