@@ -382,14 +382,14 @@
     "href": "lectures/day2.html#Dim-red",
     "title": "Day 2",
     "section": "📘 Dimension reduction: PCA and other low-dimensional embeddings",
-    "text": "📘 Dimension reduction: PCA and other low-dimensional embeddings\n🔗 Open slides by Laurent Gatto"
+    "text": "📘 Dimension reduction: PCA and other low-dimensional embeddings\n🔗 Materials coming soon. by Laurent Gatto"
   },
   {
-    "objectID": "lectures/day2.html#sceRNA",
-    "href": "lectures/day2.html#sceRNA",
+    "objectID": "lectures/day2.html#clustering",
+    "href": "lectures/day2.html#clustering",
     "title": "Day 2",
-    "section": "📘 Single-cell RNA-seq: exploration, quality control, low-dimensional embeddings",
-    "text": "📘 Single-cell RNA-seq: exploration, quality control, low-dimensional embeddings\n🔗 Open slides by Davide Risso"
+    "section": "📘 Distances and Clustering",
+    "text": "📘 Distances and Clustering\n🔗 Materials coming soon. by Davide Risso"
   },
   {
     "objectID": "lectures/day5.html",
