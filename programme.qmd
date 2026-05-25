@@ -47,6 +47,8 @@
 | 12:00-12:30                               | **Discussion in the garden**
 | 12:30-14:00                               | *\~\~\~ Lunch break \~\~\~*                                                                                                                  |
 | 14:00-15:30                               | **Lab:** End-to-end RNA-Seq workflow                                                                                                         |
+| 14:00-15:30                               | **Lab:** Intro to Tidyomics: tidy data analysis applied to omics data                                                                        |
+| 14:00-15:30                               | **Lab:** Interactive exploration with iSEE                                                                                                   |
 | 14:00-15:30                               | **Lab:** Single-cell transcriptomics                                                                                                         |
 | 15:30-16:00                               | \~\~\~ Coffee \~\~\~                                                                                                                         |
 | 16:00-17:00                               | **Lab continuation**                                                                                                                         |
@@ -71,9 +73,7 @@
 | 14:00-15:30                               | **Lab:** Proteomics                                                                                           |
 | 14:00-15:30                               |  **Lab:** End-to-end Metabolomics workflow |
 | 14:00-15:30                               | **Lab:** Multi-condition single cell RNA-seq differential analysis                                                                           |
-| 14:00-15:30                               | **Lab:** Intro to Tidyomics: tidy data analysis applied to omics data                                                                        |
 | 14:00-15:30                               | **Lab:** Spatial Transcriptomics                                                                                                             |
-| 14:00-15:30                               | **Lab:** Interactive exploration with iSEE                                                                                                   |
 | 14:00-15:30                               | **Lab:** Adaptive immune receptor repertoires                                                                                                |
 | 15:30-16:00                               | \~\~\~ Coffee \~\~\~                                                                                                                         |
 | 16:00-17:00                               | **Lab continuation**                                                                                                                         |
