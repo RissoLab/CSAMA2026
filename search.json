@@ -427,6 +427,13 @@
     "text": "Note\n\n\n\nWelcome to Day 1! Below you’ll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources."
   },
   {
+    "objectID": "lectures/day1.html#intro_CSAMA",
+    "href": "lectures/day1.html#intro_CSAMA",
+    "title": "Day 1",
+    "section": "📘 Introduction to CSAMA2026",
+    "text": "📘 Introduction to CSAMA2026\n🔗 Open slides"
+  },
+  {
     "objectID": "lectures/day1.html#intro",
     "href": "lectures/day1.html#intro",
     "title": "Day 1",
@@ -438,7 +445,7 @@
     "href": "lectures/day1.html#annotation",
     "title": "Day 1",
     "section": "📘 Annotation and annotation resources",
-    "text": "📘 Annotation and annotation resources\n🔗 Open slides + source code"
+    "text": "📘 Annotation and annotation resources\n🔗 Open slides\n🔗 source code"
   },
   {
     "objectID": "lectures/day1.html#Regression",
