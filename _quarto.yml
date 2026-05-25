@@ -35,8 +35,8 @@ website:
         menu:
           - href: lectures/day1.qmd
             text: Day 1
-#          - href: lectures/day2.qmd
-#            text: Day 2
+          - href: lectures/day2.qmd
+            text: Day 2
 #          - href: lectures/day3.qmd
 #            text: Day 3
 #          - href: lectures/day4.qmd
