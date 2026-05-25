@@ -94,7 +94,7 @@ website:
       - href: installation.qmd
         text: Installation
   page-footer:
-    left: "Copyright (c) 2025, European Bioconductor Society e.V. </br>
+    left: "Copyright (c) 2026, European Bioconductor Society e.V. </br>
   The European Bioconductor Society e.V. is
   a registered association in Germany created to support
   Bioconductor's mission to promote open source software
