@@ -23,13 +23,13 @@ Welcome to Day 2! Below you'll find the lectures and materials to explore. Click
 
 ## 📘 Dimension reduction: PCA and other low-dimensional embeddings {#Dim-red}
 
-🔗 [Open slides](https://github.com/rgentlem/PCA-lecture/blob/main/PCA.html) by Laurent Gatto
+🔗 Materials coming soon. by Laurent Gatto
 
 ---
 
-## 📘 Single-cell RNA-seq: exploration, quality control, low-dimensional embeddings {#sceRNA}
+## 📘 Distances and Clustering {#clustering}
 
-🔗 [Open slides](https://drive.google.com/file/d/1loa3BLac2vPtu-tFETduXxrCmOsePmeL/view?usp=drive_link) by Davide Risso
+🔗 Materials coming soon. by Davide Risso
 
 ---
 
