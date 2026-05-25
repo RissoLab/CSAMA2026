@@ -43,7 +43,7 @@
 | 09:15-10:00                               | **Lecture:** RNA-Seq differential expression                                                                   |
 | 10:00-10:30                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
 | 10:30-11:15                               | **Lecture:** Dimension reduction: PCA and other low-dimensional embeddings                                                                                            |
-| 11:15-12:00                               | **Lecture:** Single-cell RNA-seq: exploration, quality control, low-dimensional embeddings                                                   |
+| 11:15-12:00                               | **Lecture:** Distances and Clustering                                                    |
 | 12:00-12:30                               | **Discussion in the garden**
 | 12:30-14:00                               | *\~\~\~ Lunch break \~\~\~*                                                                                                                  |
 | 14:00-15:30                               | **Lab:** End-to-end RNA-Seq workflow                                                                                                         |
@@ -53,35 +53,33 @@
 | 17:00-17:30                               | **Flashlight talks**                                                                                                                         |
 | 20:10-22:00                               | **Evening session:** Drinks will be provided                                                                                                 |
 | <font color="teal">**Wed 27 May**</font>  |                                                                                                                                              |
-| 08:30-09:15                               | **Lecture:** Distances and Clustering                                                                              |
+| 08:30-09:15                               | **Lecture:** Single-cell transcriptomics                                                                             |
 | 09:15-10:00                               | **Lecture:**  Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping                                                           |
 | 10:00-10:30                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
-| 10:30-11:15                               | **Lecture:** Introduction to spatial omics                                                   |
-| 11:15-12:00                               | **Lecture:** Statistical methods for spatial transcriptomics                                                                                                   |
+| 10:30-11:15                               | **Lecture:** Design of High Throughput Experiments and their Analysis                                                   |
+| 11:15-12:00                               | **Lecture:** Multi-condition single cell RNA-seq II: when is the right time to categorize?                                                                                                  |
 | 12:00-14:00                               | *\~\~\~ Lunch break \~\~\~*                                                                                                                  |
 | 14:00-17:00                               | **Social Programme:** Excursion to the mountains and dinner. |
 | <font color="teal">**Thu 28 May**</font> |                                                                                                                                              |
 | 08:30-09:15                               | **Lecture:** Mass spectrometry-based proteomics including single-cell                                                                        |
 | 09:15-10:00                               | **Lecture:** Mass spectrometry-based metabolomics                                                                                            |
 | 10:00-10:30                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
-| 10:30-11:15                               | **Lecture:** Computational immunology and immunoinformatics                                                                                                                          |
-| 11:15-12:00                               | **Lecture:** Multi-condition single cell RNA-seq II: when is the right time to categorize?                                                                                                    |
+| 10:30-11:15                               | **Lecture:** Introduction to spatial omics                                                                                                                         |
+| 11:15-12:00                               | **Lecture:** Spatial transcriptomics: from images to counts                                                                                                     |
 | 12:00-12:30                               | **Discussion in the garden**
 | 12:30-14:00                               | *\~\~\~ Lunch break \~\~\~*                                                                                                                  |
-| 14:00-14:45                               | **Lab:** Proteomics                                                                                           |
-| 14:45-15:15                               |  **Lab:** End-to-end Metabolomics workflow                                                    |
-| 15:15-15:30                               | \~\~\~ Coffee \~\~\~                                                                                                                         |
-| 15:30-17:00                               | **Lab:** Multi-condition single cell RNA-seq differential analysis                                                                           |
-| 15:30-17:00                               | **Lab:** Intro to Tidyomics: tidy data analysis applied to omics data                                                                        |
-| 15:30-17:00                               | **Lab:** Spatial Transcriptomics                                                                                                             |
-| 15:30-17:00                               | **Lab:** Trajectory analysis                                                                                                                 |
-| 15:30-17:00                               | **Lab:** Interactive exploration with iSEE                                                                                                   |
-| 15:30-17:00                               | **Lab:** Working with Image Data                                                                                                             |
-| 15:30-17:00                               | **Lab:** Analysis with SpatialData                                                                                                           |
-| 15:30-17:00                               | **Lab:** Adaptive immune receptor repertoires                                                                                                |
+| 14:00-15:30                               | **Lab:** Proteomics                                                                                           |
+| 14:00-15:30                               |  **Lab:** End-to-end Metabolomics workflow |
+| 14:00-15:30                               | **Lab:** Multi-condition single cell RNA-seq differential analysis                                                                           |
+| 14:00-15:30                               | **Lab:** Intro to Tidyomics: tidy data analysis applied to omics data                                                                        |
+| 14:00-15:30                               | **Lab:** Spatial Transcriptomics                                                                                                             |
+| 14:00-15:30                               | **Lab:** Interactive exploration with iSEE                                                                                                   |
+| 14:00-15:30                               | **Lab:** Adaptive immune receptor repertoires                                                                                                |
+| 15:30-16:00                               | \~\~\~ Coffee \~\~\~                                                                                                                         |
+| 16:00-17:00                               | **Lab continuation**                                                                                                                         |
 | 17:00-17:30                               | **Flashlight talks**                                                                                                                         |
 | <font color="teal">**Fri 29 May**</font> |                                                                                                                                              |
-| 08:30-09:15                               | **Lecture:** Design of High Throughput Experiments and their Analysis                                                                        |
+| 08:30-09:15                               | **Lecture:** Computational immunology and immunoinformatics                                                                         |
 | 09:15-10:00                               | **Lecture:** Machine learning and AI                                                                                                                |
 | 10:00-10:30                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
 | 10:30-11:15                               | **Lecture:** Deep learning for digital pathology                                                                                             |
