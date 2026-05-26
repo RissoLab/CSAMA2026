@@ -35,6 +35,8 @@
 | 12:00-12:30                               | **Discussion in the garden**                                                                                                              |
 | 12:30-14:00                               | *\~\~\~ Lunch break \~\~\~*                                                                                                                  |
 | 14:00-15:30                               | **Lab:** R and Bioconductor basics                                                                                                           |
+| 14:00-15:30                               | **Lab:** Intro to Quarto                                                                                                           |
+| 14:00-15:30                               | **Lab:** Randomness and the linear model                                                                                                           |
 | 15:30-16:00                               | *\~\~\~ Coffee \~\~\~*                                                                                                                       |
 | 16:00-17:30                               | **Lab continuation**                                                                                                                         |
 | 20:10-22:00                               | **Evening session:** Drinks will be provided                                                                                                 |
