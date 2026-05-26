@@ -25,12 +25,16 @@ Welcome to Day 2! Below you'll find the lectures and materials to explore. Click
 
 🔗 [Open slides](https://lgatto.codeberg.page/pub/csama-talk/slides.html) by Laurent Gatto
 
+**📖 Further reading:**  
+[Modern Statistics for Modern Biology – Chapter 7: Multivariate Analysis](https://www.huber.embl.de/msmb/07-chap.html)
 ---
 
 ## 📘 Distances and Clustering {#clustering}
 
 🔗 [Open slides](Distances_and_Clustering.pdf) by Davide Risso
 
+**📖 Further reading:**  
+[Modern Statistics for Modern Biology – Chapter 5: Clustering](https://www.huber.embl.de/msmb/05-chap.html)
 ---
 
 
