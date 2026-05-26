@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Day 3 – CSAMA 2026 Biological Data Science</title>
+<title>Multivariate Analysis and PCA – CSAMA 2026 Biological Data Science</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,24 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/CSAMA2026.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-63c6dc05bb626dfd52f6a8c78af6ca34.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/CSAMA2026.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-63c6dc05bb626dfd52f6a8c78af6ca34.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,10 +74,10 @@ ul.task-list li input[type="checkbox"] {
 <meta http-equiv="Cache-Control" content="max-age=1800, must-revalidate">
 
 
-<link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Day 3 – CSAMA 2026 Biological Data Science">
-<meta property="og:description" content="Wed 27 May">
-<meta property="og:image" content="https://csama2026.bioconductor.eu/lectures/images/CSAMA2026.png">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Multivariate Analysis and PCA – CSAMA 2026 Biological Data Science">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://csama2026.bioconductor.eu/lab/17_multivariate_pca/images/CSAMA2026.png">
 <meta property="og:site_name" content="CSAMA 2026 Biological Data Science">
 <meta property="og:locale" content="en_US">
 </head>
@@ -89,9 +89,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/CSAMA2026.png" alt="" class="navbar-logo light-content">
-    <img src="../images/CSAMA2026.png" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/CSAMA2026.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/CSAMA2026.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -101,11 +101,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../programme.html"> 
+    <a class="nav-link" href="../../programme.html"> 
 <span class="menu-text">Programme</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -114,11 +114,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="../lectures/day1.html">
+    <a class="dropdown-item" href="../../lectures/day1.html">
  <span class="dropdown-text">Day 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lectures/day2.html">
+    <a class="dropdown-item" href="../../lectures/day2.html">
  <span class="dropdown-text">Day 2</span></a>
   </li>  
     </ul>
@@ -129,65 +129,65 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-labs">    
         <li>
-    <a class="dropdown-item" href="../lab/1_intro-to-r-bioc/lab-1-intro-to-r-bioc.html">
+    <a class="dropdown-item" href="../../lab/1_intro-to-r-bioc/lab-1-intro-to-r-bioc.html">
  <span class="dropdown-text">Intro to R and Bioconductor</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lab/2_quarto-intro/2_quarto-intro.html">
+    <a class="dropdown-item" href="../../lab/2_quarto-intro/2_quarto-intro.html">
  <span class="dropdown-text">Intro to Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lab/3_regression/randomness_and_linear.html">
+    <a class="dropdown-item" href="../../lab/3_regression/randomness_and_linear.html">
  <span class="dropdown-text">Regression</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lab/4_bulk-rnaseq/rnaseqGene_CSAMA.html">
+    <a class="dropdown-item" href="../../lab/4_bulk-rnaseq/rnaseqGene_CSAMA.html">
  <span class="dropdown-text">Bulk RNA-seq analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lab/5_single-cell-rnaseq/eda_qc.html">
+    <a class="dropdown-item" href="../../lab/5_single-cell-rnaseq/eda_qc.html">
  <span class="dropdown-text">ScRNA-seq EDA</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lab/5_single-cell-rnaseq/cell_type_annotation.html">
+    <a class="dropdown-item" href="../../lab/5_single-cell-rnaseq/cell_type_annotation.html">
  <span class="dropdown-text">ScRNA-seq Annotation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lab/10_Tidyomics.html">
+    <a class="dropdown-item" href="../../lab/10_Tidyomics.html">
  <span class="dropdown-text">Intro to Tidyomics tidy data analysis applied to omics data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lab/13_iSEE.html">
+    <a class="dropdown-item" href="../../lab/13_iSEE.html">
  <span class="dropdown-text">Interactive exploration with iSEE</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lab/17_multivariate_pca/multi_pca.html">
+    <a class="dropdown-item" href="../../lab/17_multivariate_pca/multi_pca.html">
  <span class="dropdown-text">Multivariate Analysis and PCA</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../registration.html"> 
+    <a class="nav-link" href="../../registration.html"> 
 <span class="menu-text">Registration</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../venue.html"> 
+    <a class="nav-link" href="../../venue.html"> 
 <span class="menu-text">Venue</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../travel-and-accommodation.html"> 
+    <a class="nav-link" href="../../travel-and-accommodation.html"> 
 <span class="menu-text">Travel and Accommodation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../code.html"> 
+    <a class="nav-link" href="../../code.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contacts.html"> 
+    <a class="nav-link" href="../../contacts.html"> 
 <span class="menu-text">Contacts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../installation.html"> 
+    <a class="nav-link" href="../../installation.html"> 
 <span class="menu-text">Installation</span></a>
   </li>  
 </ul>
@@ -206,10 +206,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#NNG" id="toc-NNG" class="nav-link active" data-scroll-target="#NNG">📘 Distances, nearest-neighbour graphs and clustering</a></li>
-  <li><a href="#scRNA-adv" id="toc-scRNA-adv" class="nav-link" data-scroll-target="#scRNA-adv">📘 Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping</a></li>
-  <li><a href="#introduction-to-spatial-omics" id="toc-introduction-to-spatial-omics" class="nav-link" data-scroll-target="#introduction-to-spatial-omics">📘 Introduction to spatial omics</a></li>
-  <li><a href="#statistical-methods-for-spatial-transcriptomics" id="toc-statistical-methods-for-spatial-transcriptomics" class="nav-link" data-scroll-target="#statistical-methods-for-spatial-transcriptomics">📘 Statistical methods for spatial transcriptomics</a></li>
+  <li><a href="#open-the-lab-file" id="toc-open-the-lab-file" class="nav-link active" data-scroll-target="#open-the-lab-file">🔗 Open the Lab File</a></li>
   </ul>
 </nav>
     </div>
@@ -218,8 +215,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Day 3</h1>
-<p class="subtitle lead">Wed 27 May</p>
+<h1 class="title">Multivariate Analysis and PCA</h1>
 </div>
 
 
@@ -236,34 +232,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Welcome to Day 3! Below you’ll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources.</p>
-</div>
-</div>
-<section id="NNG" class="level2">
-<h2 class="anchored" data-anchor-id="NNG">📘 Distances, nearest-neighbour graphs and clustering</h2>
-<p>Materials coming soon.</p>
-</section>
-<section id="scRNA-adv" class="level2">
-<h2 class="anchored" data-anchor-id="scRNA-adv">📘 Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping</h2>
-<p>🔗 <a href="https://drive.google.com/file/d/1uZ5hNPQK3DyolQWf1tm_WmWEcgRnAesE/view?usp=sharing">Open slides</a> by Charlotte Soneson</p>
-</section>
-<section id="introduction-to-spatial-omics" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-spatial-omics">📘 Introduction to spatial omics</h2>
-<p>🔗 <a href="https://drive.google.com/file/d/10ifLrtgMaTc_dXcaT4uDDPMxAyF6kAx2/view?usp=drive_link">Open slides</a></p>
-</section>
-<section id="statistical-methods-for-spatial-transcriptomics" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-methods-for-spatial-transcriptomics">📘 Statistical methods for spatial transcriptomics</h2>
-<p>Materials coming soon.</p>
+<section id="open-the-lab-file" class="level2">
+<h2 class="anchored" data-anchor-id="open-the-lab-file">🔗 Open the Lab File</h2>
+<p><a href="https://github.com/Bioconductor/CSAMA-labs/blob/devel/multivariate-pca/multivariate-pca.html">Click here to access the lab</a></p>
 
 
 </section>
