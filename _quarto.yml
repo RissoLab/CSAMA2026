@@ -68,7 +68,7 @@ website:
 #          - href: lab/9_multi/9_multi.html
 #            text: Multi-condition single cell RNA-seq differential analysis
           - href: lab/10_Tidyomics.qmd
-            text: Intro to Tidyomics: tidy data analysis applied to omics data
+            text: Intro to Tidyomics tidy data analysis applied to omics data
 #          - href: lab/11_spatial/spatial.qmd
 #            text: Spatial Transcriptomics
 #          - href: lab/12_Trajectory.qmd
