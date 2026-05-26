@@ -23,7 +23,7 @@ Welcome to Day 2! Below you'll find the lectures and materials to explore. Click
 
 ## 📘 Dimension reduction: PCA and other low-dimensional embeddings {#Dim-red}
 
-🔗 Materials coming soon. by Laurent Gatto
+🔗 [Open slides](https://lgatto.codeberg.page/pub/csama-talk/slides.html) by Laurent Gatto
 
 ---
 
