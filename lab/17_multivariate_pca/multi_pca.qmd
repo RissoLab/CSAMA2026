@@ -1,7 +1,0 @@
----
-title: "Multivariate Analysis and PCA"
-format: html
----
-
-## 🔗 Open the Lab File  
-[Click here to access the lab](https://github.com/Bioconductor/CSAMA-labs/blob/devel/multivariate-pca/multivariate-pca.html)
