@@ -14,12 +14,12 @@ website:
     site-name:
       "CSAMA 2026"
     image: "images/CSAMA2026.png"
-  announcement:
-    icon: info-circle
-    dismissable: true
-    content: "**Registration is now open!** **New**: accommodation options available. Visit the [Registration](/registration.qmd) page for more details."
-    type: dark
-    position: above-navbar
+  # announcement:
+  #   icon: info-circle
+  #   dismissable: true
+  #   content: "**Registration is now open!** **New**: accommodation options available. Visit the [Registration](/registration.qmd) page for more details."
+  #   type: dark
+  #   position: above-navbar
   navbar:
     title: false
     background: "#1a81c2"
