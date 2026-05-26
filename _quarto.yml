@@ -53,12 +53,12 @@ website:
             text: Intro to Quarto
           - href: lab/3_regression/randomness_and_linear.html
             text: Regression
-#          - href: lab/4_bulk-rnaseq/rnaseqGene_CSAMA.html
-#            text: Bulk RNA-seq analysis
-#          - href: lab/5_single-cell-rnaseq/eda_qc.html
-#            text: ScRNA-seq EDA
-#          - href: lab/5_single-cell-rnaseq/cell_type_annotation.html
-#            text: ScRNA-seq Annotation
+          - href: lab/4_bulk-rnaseq/rnaseqGene_CSAMA.html
+            text: Bulk RNA-seq analysis
+          - href: lab/5_single-cell-rnaseq/eda_qc.html
+            text: ScRNA-seq EDA
+          - href: lab/5_single-cell-rnaseq/cell_type_annotation.html
+            text: ScRNA-seq Annotation
 #          - href: lab/6_bulk-atacseq/fluent-genomics-v2.html
 #            text: Bulk ATAC-seq analysis
 #          - href: lab/7_prot/proteom.qmd
@@ -67,14 +67,14 @@ website:
 #            text: End-to-end Metabolomics workflow
 #          - href: lab/9_multi/9_multi.html
 #            text: Multi-condition single cell RNA-seq differential analysis
-#          - href: lab/10_Tidyomics.qmd
-#            text: Intro to Tidyomics: tidy data analysis applied to omics data
+          - href: lab/10_Tidyomics.qmd
+            text: Intro to Tidyomics: tidy data analysis applied to omics data
 #          - href: lab/11_spatial/spatial.qmd
 #            text: Spatial Transcriptomics
 #          - href: lab/12_Trajectory.qmd
 #            text: Trajectory analysis
-#          - href: lab/13_iSEE.qmd
-#            text: Interactive exploration with iSEE
+          - href: lab/13_iSEE.qmd
+            text: Interactive exploration with iSEE
 #          - href: lab/14_Image.qmd
 #            text: Working with Image Data
 #          - href: lab/15_SpatialData/15_SpatialData.qmd
