@@ -81,7 +81,7 @@ website:
 #            text: Analysis with SpatialData
 #          - href: lab/16_immune/16_immune.qmd
 #            text: Adaptive immune receptor repertoires
-          - href: lab/17_multivariate_pca/multi_pca.qmd
+          - href: lab/17_multivariate_pca/multivariate-pca.html
             text: Multivariate Analysis and PCA
 
       - href: registration.qmd
