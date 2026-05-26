@@ -29,7 +29,7 @@ Welcome to Day 2! Below you'll find the lectures and materials to explore. Click
 
 ## 📘 Distances and Clustering {#clustering}
 
-🔗 Materials coming soon. by Davide Risso
+🔗 [Open slides](Distances_and_Clustering.pdf) by Davide Risso
 
 ---
 
