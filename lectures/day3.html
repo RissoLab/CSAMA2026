@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Day 3 – CSAMA 2026 Biological Data Science</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -33,15 +36,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/CSAMA2026.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-58d3dd94c760707d596f4d009cf26f08.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-db5d9849839adab1b8a81b3449dca5db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,8 +77,8 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Day 3 – CSAMA 2026 Biological Data Science">
 <meta property="og:description" content="Wed 27 May">
-<meta property="og:image" content="images/CSAMA2026.png">
-<meta property="og:site_name" content="CSAMA 2026">
+<meta property="og:image" content="https://csama2026.bioconductor.eu/lectures/images/CSAMA2026.png">
+<meta property="og:site_name" content="CSAMA 2026 Biological Data Science">
 <meta property="og:locale" content="en_US">
 </head>
 
@@ -204,10 +206,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#NNG" id="toc-NNG" class="nav-link active" data-scroll-target="#NNG">📘 Distances, nearest-neighbour graphs and clustering</a></li>
+  <li><a href="#single-cell" id="toc-single-cell" class="nav-link active" data-scroll-target="#single-cell">📘 Single-cell transcriptomics</a></li>
   <li><a href="#scRNA-adv" id="toc-scRNA-adv" class="nav-link" data-scroll-target="#scRNA-adv">📘 Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping</a></li>
-  <li><a href="#introduction-to-spatial-omics" id="toc-introduction-to-spatial-omics" class="nav-link" data-scroll-target="#introduction-to-spatial-omics">📘 Introduction to spatial omics</a></li>
-  <li><a href="#statistical-methods-for-spatial-transcriptomics" id="toc-statistical-methods-for-spatial-transcriptomics" class="nav-link" data-scroll-target="#statistical-methods-for-spatial-transcriptomics">📘 Statistical methods for spatial transcriptomics</a></li>
+  <li><a href="#design-of-high-throughput-experiments-and-their-analysis" id="toc-design-of-high-throughput-experiments-and-their-analysis" class="nav-link" data-scroll-target="#design-of-high-throughput-experiments-and-their-analysis">📘 Design of High Throughput Experiments and their Analysis</a></li>
+  <li><a href="#multi-condition-single-cell-rna-seq-ii-when-is-the-right-time-to-categorize" id="toc-multi-condition-single-cell-rna-seq-ii-when-is-the-right-time-to-categorize" class="nav-link" data-scroll-target="#multi-condition-single-cell-rna-seq-ii-when-is-the-right-time-to-categorize">📘 Multi-condition single cell RNA-seq II: when is the right time to categorize?</a></li>
   </ul>
 </nav>
     </div>
@@ -247,21 +249,21 @@ Note
 <p>Welcome to Day 3! Below you’ll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources.</p>
 </div>
 </div>
-<section id="NNG" class="level2">
-<h2 class="anchored" data-anchor-id="NNG">📘 Distances, nearest-neighbour graphs and clustering</h2>
-<p>Materials coming soon.</p>
+<section id="single-cell" class="level2">
+<h2 class="anchored" data-anchor-id="single-cell">📘 Single-cell transcriptomics</h2>
+<p>🔗 <a href="https://drive.google.com/file/d/1dq2EppbAXg8AkPqEpUVasXFO9rdZM9v1/view?usp=sharing">Open slides</a> by Helena Crowell</p>
 </section>
 <section id="scRNA-adv" class="level2">
 <h2 class="anchored" data-anchor-id="scRNA-adv">📘 Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping</h2>
 <p>🔗 <a href="https://drive.google.com/file/d/1uZ5hNPQK3DyolQWf1tm_WmWEcgRnAesE/view?usp=sharing">Open slides</a> by Charlotte Soneson</p>
 </section>
-<section id="introduction-to-spatial-omics" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-spatial-omics">📘 Introduction to spatial omics</h2>
-<p>🔗 <a href="https://drive.google.com/file/d/10ifLrtgMaTc_dXcaT4uDDPMxAyF6kAx2/view?usp=drive_link">Open slides</a></p>
+<section id="design-of-high-throughput-experiments-and-their-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="design-of-high-throughput-experiments-and-their-analysis">📘 Design of High Throughput Experiments and their Analysis</h2>
+<p>🔗 <a href="Experimental_desing_imkeller_CSMAMA2026.pdf">Open slides</a> by Katharina Imkeller</p>
 </section>
-<section id="statistical-methods-for-spatial-transcriptomics" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-methods-for-spatial-transcriptomics">📘 Statistical methods for spatial transcriptomics</h2>
-<p>Materials coming soon.</p>
+<section id="multi-condition-single-cell-rna-seq-ii-when-is-the-right-time-to-categorize" class="level2">
+<h2 class="anchored" data-anchor-id="multi-condition-single-cell-rna-seq-ii-when-is-the-right-time-to-categorize">📘 Multi-condition single cell RNA-seq II: when is the right time to categorize?</h2>
+<p>🔗 <a href="https://docs.google.com/presentation/d/1FJeqGqDiEPOnBojeHZgkcXhVjKNj85DGyxVUk0wIxfw/edit?usp=sharing">Open slides</a> by Wolfgang Huber</p>
 
 
 </section>
@@ -340,7 +342,7 @@ Note
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/csama2026\.bioconductor\.eu");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
