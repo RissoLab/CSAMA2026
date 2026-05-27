@@ -19,7 +19,7 @@ Welcome to Day 3! Below you'll find the lectures and materials to explore. Click
 
 ## 📘 Design of High Throughput Experiments and their Analysis
 
-🔗 [Open slides](Experimental_desing_imkeller_CSMAMA2026.pdf) by Katharina Imkeller
+🔗 [Open slides](Experimental_desing_imkeller_CSAMA2026.pdf) by Katharina Imkeller
 
 
 ## 📘 Multi-condition single cell RNA-seq II: when is the right time to categorize?
