@@ -1,6 +1,6 @@
 ---
 title: "Day 5"
-subtitle:  "Fri 11 July"
+subtitle:  "Fri 29 May"
 format: html
 ---
 
@@ -9,14 +9,18 @@ Welcome to Day 5! Below you'll find the lectures and materials to explore. Click
 :::
 
 
-## 📘 Design of High Throughput Experiments and their Analysis {#Design}
+## 📘 Computational immunology and immunoinformatics {#imm}
 
-🔗 [Open slides](https://drive.google.com/file/d/1PWuyGaqf861mgjyh946ojYJZY4mcN1lz/view?usp=drive_link)
+🔗 [Open slides](Immunoinformatics_Imkeller_CSAMA2026.pdf)
 
-## 📘 Machine learning {#ML}
+## 📘 Machine learning and AI {#ML}
 
-Materials coming soon.
+Materials coming soon by Davide Risso
 
 ## 📘 Deep learning for digital pathology {#AI_1}
 
-🔗 [Open slides](http://bit.ly/40ffpBE)
+🔗 [Open slides](http://bit.ly/40ffpBE) by Ilaria Billato
+
+## 📘 Bioconductor advanced topics: LLMs, agents, coding helpers {#AI_2}
+
+Materials coming soon by Vince Carey
