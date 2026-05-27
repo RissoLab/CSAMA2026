@@ -8,20 +8,20 @@ format: html
 Welcome to Day 3! Below you'll find the lectures and materials to explore. Click the 🔗 links to open the slides or resources.
 :::
 
-## 📘 Distances, nearest-neighbour graphs and clustering {#NNG}
+## 📘 Single-cell transcriptomics {#single-cell}
 
-Materials coming soon.
+🔗 [Open slides](https://drive.google.com/file/d/1dq2EppbAXg8AkPqEpUVasXFO9rdZM9v1/view?usp=sharing) by Helena Crowell
 
 ## 📘 Multi-condition single cell RNA-seq I: pseudo-bulking, double-dipping {#scRNA-adv}
 
 🔗 [Open slides](https://drive.google.com/file/d/1uZ5hNPQK3DyolQWf1tm_WmWEcgRnAesE/view?usp=sharing) by Charlotte Soneson
 
 
-## 📘 Introduction to spatial omics 
+## 📘 Design of High Throughput Experiments and their Analysis
 
-🔗 [Open slides](https://drive.google.com/file/d/10ifLrtgMaTc_dXcaT4uDDPMxAyF6kAx2/view?usp=drive_link)
+🔗 [Open slides](Experimental_desing_imkeller_CSMAMA2026.pdf) by Katharina Imkeller
 
 
-## 📘 Statistical methods for spatial transcriptomics
+## 📘 Multi-condition single cell RNA-seq II: when is the right time to categorize?
 
-Materials coming soon.
+🔗 [Open slides](https://docs.google.com/presentation/d/1FJeqGqDiEPOnBojeHZgkcXhVjKNj85DGyxVUk0wIxfw/edit?usp=sharing) by Wolfgang Huber
