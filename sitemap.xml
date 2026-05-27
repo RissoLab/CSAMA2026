@@ -2,102 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://csama2026.bioconductor.eu/code.html</loc>
-    <lastmod>2026-05-27T06:42:28.478Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/registration-coming-soon.html</loc>
-    <lastmod>2026-05-27T06:42:29.151Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/venue.html</loc>
-    <lastmod>2026-05-27T06:42:29.153Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lab/14_Image.html</loc>
-    <lastmod>2026-05-27T06:42:28.518Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lab/10_Tidyomics.html</loc>
-    <lastmod>2026-05-27T06:42:28.518Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lab/15_SpatialData/15_SpatialData.html</loc>
-    <lastmod>2026-05-27T06:42:28.518Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lab/12_Trajectory.html</loc>
-    <lastmod>2026-05-27T06:42:28.518Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/installation.html</loc>
-    <lastmod>2026-05-27T06:42:28.517Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lectures/day3.html</loc>
-    <lastmod>2026-05-27T06:42:28.861Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lectures/day5.html</loc>
-    <lastmod>2026-05-27T06:42:28.861Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lectures/day2.html</loc>
-    <lastmod>2026-05-27T06:42:28.861Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/programme.html</loc>
-    <lastmod>2026-05-27T06:42:29.151Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/contacts.html</loc>
-    <lastmod>2026-05-27T06:42:28.478Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/programme-coming-soon.html</loc>
-    <lastmod>2026-05-27T06:42:29.151Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lectures/links.html</loc>
-    <lastmod>2026-05-27T06:42:28.897Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lectures/day4.html</loc>
-    <lastmod>2026-05-27T06:42:28.861Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lectures/day1.html</loc>
-    <lastmod>2026-05-27T06:42:28.861Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/index.html</loc>
-    <lastmod>2026-05-27T06:42:28.517Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lab/16_immune/16_immune.html</loc>
-    <lastmod>2026-05-27T06:42:28.518Z</lastmod>
+    <lastmod>2026-05-27T06:42:48.870Z</lastmod>
   </url>
   <url>
     <loc>https://csama2026.bioconductor.eu/lab/7_prot/proteom.html</loc>
-    <lastmod>2026-05-27T06:42:28.688Z</lastmod>
+    <lastmod>2026-05-27T06:42:49.104Z</lastmod>
   </url>
   <url>
-    <loc>https://csama2026.bioconductor.eu/lab/8_metab/Metabonaut.html</loc>
-    <lastmod>2026-05-27T06:42:28.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csama2026.bioconductor.eu/lab/11_spatial/spatial.html</loc>
-    <lastmod>2026-05-27T06:42:28.518Z</lastmod>
+    <loc>https://csama2026.bioconductor.eu/lab/12_Trajectory.html</loc>
+    <lastmod>2026-05-27T06:42:48.914Z</lastmod>
   </url>
   <url>
     <loc>https://csama2026.bioconductor.eu/lab/13_iSEE.html</loc>
-    <lastmod>2026-05-27T06:42:28.518Z</lastmod>
+    <lastmod>2026-05-27T06:42:48.914Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lab/8_metab/Metabonaut.html</loc>
+    <lastmod>2026-05-27T06:42:49.104Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/venue.html</loc>
+    <lastmod>2026-05-27T06:42:49.627Z</lastmod>
   </url>
   <url>
     <loc>https://csama2026.bioconductor.eu/registration.html</loc>
-    <lastmod>2026-05-27T06:42:29.151Z</lastmod>
+    <lastmod>2026-05-27T06:42:49.626Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/registration-coming-soon.html</loc>
+    <lastmod>2026-05-27T06:42:49.625Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/index.html</loc>
+    <lastmod>2026-05-27T06:42:48.913Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lectures/links.html</loc>
+    <lastmod>2026-05-27T06:42:49.344Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lectures/day1.html</loc>
+    <lastmod>2026-05-27T06:42:49.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lectures/day3.html</loc>
+    <lastmod>2026-05-27T06:42:49.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/contacts.html</loc>
+    <lastmod>2026-05-27T06:42:48.870Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/programme-coming-soon.html</loc>
+    <lastmod>2026-05-27T06:42:49.625Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lectures/day4.html</loc>
+    <lastmod>2026-05-27T06:42:49.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lectures/day2.html</loc>
+    <lastmod>2026-05-27T06:42:49.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lectures/day5.html</loc>
+    <lastmod>2026-05-27T06:42:49.304Z</lastmod>
   </url>
   <url>
     <loc>https://csama2026.bioconductor.eu/travel-and-accommodation.html</loc>
-    <lastmod>2026-05-27T06:42:29.153Z</lastmod>
+    <lastmod>2026-05-27T06:42:49.627Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/installation.html</loc>
+    <lastmod>2026-05-27T06:42:48.913Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/programme.html</loc>
+    <lastmod>2026-05-27T06:42:49.625Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lab/15_SpatialData/15_SpatialData.html</loc>
+    <lastmod>2026-05-27T06:42:48.914Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lab/16_immune/16_immune.html</loc>
+    <lastmod>2026-05-27T06:42:48.914Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lab/10_Tidyomics.html</loc>
+    <lastmod>2026-05-27T06:42:48.914Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lab/11_spatial/spatial.html</loc>
+    <lastmod>2026-05-27T06:42:48.914Z</lastmod>
+  </url>
+  <url>
+    <loc>https://csama2026.bioconductor.eu/lab/14_Image.html</loc>
+    <lastmod>2026-05-27T06:42:48.914Z</lastmod>
   </url>
 </urlset>
