@@ -10,17 +10,17 @@ Welcome to Day 4! Below you'll find the lectures and materials to explore. Click
 
 ## 📘 Mass spectrometry-based proteomics including single-cell {#proteomics}
 
-🔗 [Open slides](http://bit.ly/CSAMA2025)
+🔗 [Open slides](https://lgatto.codeberg.page/pub/csama-2026/#1) by Laurent Gatto
 
 
-## 📘 Mass spectrometry-based metabolomics {#metabolomics}
+## 📘 Mass spectrometry-based metabolomics {#metabolomics} by Johannes Rainer
 
 🔗 [Open slides](metabolomics-overview.html)
 
-## 📘 Statistical methods for spatial omics {#Spatial}
+## 📘 Introduction to spatial omics {#Spatial}
 
-🔗 [Open slides](https://drive.google.com/file/d/1uoz0XCUBf4Vn1UGmfgS_P3qERmF7XZuA/view?usp=sharing)
+🔗 [Open slides](https://drive.google.com/file/d/1uoz0XCUBf4Vn1UGmfgS_P3qERmF7XZuA/view?usp=sharing) by Helena Crowell
 
-## 📘  Bioconductor advanced topics: annotation resources, language interoperation {#annotation}
+## 📘  Spatial transcriptomics: from images to counts
 
-🔗 [Open slides](https://drive.google.com/file/d/1SYlLnHgvcTOntOLD6nkIk9VoPKnGuljU/view?usp=sharing)
+🔗 [Open slides](https://drive.google.com/file/d/1SYlLnHgvcTOntOLD6nkIk9VoPKnGuljU/view?usp=sharing) by Daria Lazic
