@@ -1,0 +1,757 @@
+---
+title: "Single-cell B cell receptor repertoire analysis"
+subtitle: "CSAMA 2026 — Statistics and Computing in Genome Data Science"
+author: "Katharina Imkeller"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 3
+    theme: flatly
+    highlight: tango
+    code_folding: show
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo    = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width  = 8,
+  fig.height = 5,
+  fig.align  = "center"
+)
+```
+
+---
+
+## Learning objectives
+
+By the end of this practical you will be able to:
+
+1. Load and explore single-cell BCR sequencing data in **AIRR format**
+2. Perform quality filtering appropriate for BCR repertoire analysis
+3. Visualise **isotype composition** across patients and B cell populations
+4. Infer **clonal groups** from CDR3 sequence similarity
+5. Measure **somatic hypermutation (SHM)** frequency and interpret its biological meaning
+6. Understand the concept of **clonal lineage trees** and visualize them
+
+---
+
+## Biological background
+
+### B cells and the adaptive immune response
+
+B cells are the antibody-producing cells of the adaptive immune system. Each B cell expresses a unique B cell receptor (BCR) that determines its antigen specificity. This specificity is generated during the B cell development in a process called **V(D)J recombination**. The receptor genes are assembled by randomly selecting and joining gene segments from three pools — Variable (V), Diversity (D), and Joining (J) — with additional nucleotides inserted at the junctions.
+
+```
+CDR3 region (hypervariable):
+
+--|V segment|--|N|--|D segment|--|N|--|J segment|--
+
+```
+
+The resulting **CDR3 (Complementarity Determining Region 3)** is the most variable part of the BCR and the main determinant of antigen binding. Because the nucleotide additions at the junctions are random, each B cell carries a unique CDR3 — the "molecular fingerprint" of that cell and its descendants.
+
+A complete BCR (and the secreted antibody) is a heterodimer: one **heavy chain** (encoded by IGH, assembled from V, D, and J segments) paired with one **light chain** (encoded by IGK or IGL, assembled from V and J segments only). Both chains contribute a CDR3, but the heavy-chain CDR3 is by far the more variable and is the primary focus of repertoire analysis.
+
+### Clones, SHM, and class switching
+
+When a B cell recognises its cognate antigen with sufficient affinity, it enters a **germinal centre** reaction in which two crucial processes occur:
+
+- **Somatic hypermutation (SHM)**: The enzyme AID introduces point mutations throughout the variable region at a much higher rate than the background mutation rate. B cells with mutations that increase affinity to their cognate antigen are positively selected, leading to **affinity maturation**.
+- **Class switch recombination (CSR)**: The constant region of the heavy chain is replaced, changing the **antibody isotype** from IgM to IgG, IgA, or IgE. The isotype determines the effector function of the secreted antibody.
+
+B cells originating from the same VDJ rearrangement event are defined by the same V, D, J genes and highly similar CDR3 nucleotides. These B cell groups are called **clones** — they all descend from a single progenitor B cell and share the same antigen specificity.
+
+### Single-cell BCR sequencing
+
+10x Genomics' V(D)J enrichment protocol captures full-length BCR sequences from single cells alongside their gene expression profiles. This allows us to:
+
+- Link each BCR sequence to a specific cell's transcriptional state (e.g., memory vs. naive B cell)
+- Detect clonal relationships between cells
+- Track BCR evolution (mutations, class switching) within clones
+
+### Workflow overview
+
+```
+10x Chromium (5' library GEX + VDJ)
+         ↓
+Cell Ranger (alignment, UMI counting, VDJ assembly)
+         ↓
+IgBLAST / MakeDb (germline assignment, AIRR format)
+         ↓
+  ┌──────────────────────────────────────────────────┐
+  │           This practical (R / Bioconductor)      │
+  │  Quality control → Isotype analysis →            │
+  │  Clonal inference → Diversity → SHM → Trees      │
+  └──────────────────────────────────────────────────┘
+```
+
+For a workflow description on how to convert Cell Ranger output into AIRR standard format see: https://changeo.readthedocs.io/en/stable/examples/10x.html
+The conversion has already been performed on the data that is made available for the CSAMA lab.
+
+### The AIRR Community standard
+
+The **Adaptive Immune Receptor Repertoire (AIRR) Community** has defined a standard data format for representing BCR/TCR sequences. Each row in an AIRR TSV file represents one rearranged receptor sequence, with standardised column names such as:
+
+| Column | Description |
+|--------|-------------|
+| `sequence_id` | Unique identifier for this sequence |
+| `cell_id` | Cell barcode |
+| `locus` | IGH, IGK, IGL, TRA, TRB, etc. |
+| `v_call`, `d_call`, `j_call` | Assigned V, D, J genes |
+| `junction` | CDR3 nucleotide sequence |
+| `junction_aa` | CDR3 amino acid sequence |
+| `c_call` | Constant region gene (isotype) |
+| `productive` | Whether the rearrangement is productive |
+| `sequence_alignment` | V(D)J sequence aligned to germline |
+| `germline_alignment` | Inferred germline sequence |
+
+---
+
+## The Immcantation framework
+
+We will use the **Immcantation** suite of R packages, which provides a comprehensive toolkit for BCR/TCR repertoire analysis:
+
+| Package | Purpose |
+|---------|---------|
+| `airr` | Read and write AIRR-format files |
+| `alakazam` | Core repertoire analysis: V gene usage, diversity, clonal abundance |
+| `shazam` | Mutation analysis, clonal threshold identification |
+| `scoper` | Single-cell-aware clonal grouping |
+| `dowser` | Phylogenetic lineage tree construction and visualisation |
+
+---
+
+## Setup
+
+```{r packages}
+library(airr)
+library(alakazam)
+library(shazam)
+library(scoper)
+library(dowser)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(patchwork)
+library(stringr)
+```
+
+---
+
+## The dataset
+
+The data in this practical come from a single-cell multiomics experiment of **peripheral blood B cells** from three donors. Cells were captured using the 10x Genomics Chromium 5' platform, which simultaneously captures gene expression (GEX) and V(D)J BCR sequences from the same cell.
+
+**Preprocessing (already done):**
+
+1. Raw reads were processed with **Cell Ranger** to assemble V(D)J contigs
+2. Assembled contigs were aligned to IMGT germline references using **IgBLAST** via the Immcantation `AssignGenes.py` pipeline
+3. The output was converted to AIRR TSV format using `MakeDb.py`
+
+We therefore start from an AIRR TSV file and a metadata table containing cluster annotations derived from the gene expression data.
+
+---
+
+## 1. Data loading and exploration
+
+### 1.1 Load BCR sequences
+
+The `airr::read_rearrangement()` function reads an AIRR-format TSV and returns a data frame.
+
+```{r load-bcr}
+receptors <- airr::read_rearrangement("../data/BCR_data_sequences_igblast_db-pass.tsv")
+dim(receptors)
+```
+
+```{r explore-bcr}
+# Column names
+names(receptors)
+```
+
+```{r locus-overview}
+# How many sequences per locus?
+table(receptors$locus)
+```
+
+Each B cell contributes up to three sequences: one heavy chain (IGH) and one or two light chains (IGK or IGL). Note that a productive B cell should have exactly one functional heavy chain — cells with two heavy chain sequences are likely doublets or ather artifacts and need to be removed.
+
+### 1.2 Load metadata
+
+The metadata table contains one row per cell barcode. It was derived from the gene expression analysis (SingleCellExperiment) and includes cluster annotations computed based on the gene expression data. The `bcell_group` column assigns each cell to a broad B cell population (naive, memory, activated), while `bcell_subtype` provides finer-grained annotations based on GEX clustering.
+
+```{r load-metadata}
+metadata <- read.csv("../data/metadata_complete_with_GEXcluster.csv")
+dim(metadata)
+head(metadata[, c("Barcode", "sample_id", "bcell_group", "bcell_subtype")])
+```
+
+```{r metadata-overview}
+# B cell populations per patient
+table(metadata$sample_id, metadata$bcell_group)
+```
+
+The `bcell_group` annotation assigns each cell to one of three broad B cell states:
+
+- **naive**: IgM⁺IgD⁺ B cells that have not yet encountered antigen
+- **memory**: antigen-experienced, long-lived B cells (often class-switched)
+- **activated**: recently activated B cells undergoing differentiation
+
+### 1.3 Merge BCR sequences with metadata
+
+We join on `cell_id` (BCR data) and `Barcode` (metadata). Using `all.x = TRUE` retains all BCR sequences, with `NA` values in metadata columns for cells not found in the metadata.
+
+```{r merge}
+db <- merge(receptors, metadata,
+            by.x = "cell_id",
+            by.y = "Barcode",
+            all.x = TRUE)
+
+cat("Sequences before filtering:", nrow(db), "\n")
+cat("Sequences with metadata annotation:", sum(!is.na(db$sample_id)), "\n")
+
+db <- db[!is.na(db$sample_id),]
+```
+
+> **Note:** Not all barcodes in the BCR data will have a match in the metadata — some cells may have been filtered out during the gene expression quality control steps. We will remove unmatched rows in the next section.
+
+---
+
+**Exercise:** How many unique cells (cell barcodes) are in the merged dataset? How does this compare to the number of rows?
+
+```{r}
+# Your code here
+```
+
+---
+
+## 2. Quality control and filtering
+
+Repertoire data requires several filtering steps to remove technical artefacts and focus on biologically meaningful sequences.
+
+### 2.1 Remove non-productive rearrangements
+
+A rearrangement is **productive** if it is in-frame and contains no stop codons — only productive rearrangements encode a functional receptor protein.
+
+```{r filter-nonproductive}
+cat("Non-productive sequences:", sum(!db$productive), "\n")
+db <- db[db$productive, ]
+cat("After productive filter:", nrow(db), "sequences\n")
+```
+
+### 2.2 Remove cells with multiple heavy chains
+
+Each B cell should have exactly one productive heavy chain. Cells with two or more heavy chain sequences are likely **doublets** (two cells captured together) or sequencing artefacts, and should be excluded.
+
+```{r filter-multiheavy}
+# Find cells with multiple heavy chains
+heavy_counts <- db %>%
+  filter(locus == "IGH") %>%
+  count(cell_id, name = "n_heavy")
+
+multi_heavy_cells <- heavy_counts$cell_id[heavy_counts$n_heavy > 1]
+cat("Cells with multiple heavy chains:", length(multi_heavy_cells), "\n")
+
+db <- db[!db$cell_id %in% multi_heavy_cells, ]
+cat("After multi-heavy filter:", nrow(db), "sequences\n")
+```
+
+### 2.3 Filtering summary
+
+---
+
+**Exercise:** How many unique cells (cell barcodes) remain in the merged dataset? How many sequences for each locus (IGH, IGK, IGL)?
+
+```{r}
+# Your code here
+```
+
+---
+
+For the downstream analyses focused on heavy chains, we work with the IGH subset:
+
+```{r igh-subset}
+db_heavy <- db[db$locus == "IGH", ]
+cat("Heavy chain sequences:", nrow(db_heavy), "\n")
+```
+
+---
+
+## 3. Isotype composition
+
+The **isotype** (IgM, IgD, IgG, IgA, IgE) of the BCR heavy chain reflects the cell's history of class switch recombination. IgM and IgD are the default isotypes of naive B cells; IgG, IgA, and IgE require germinal centre reactions.
+
+### 3.1 Create isotype family annotation
+
+The `c_call` column contains specific isotype subclass calls (e.g., IGHG1, IGHG2, IGHA1). We group these into four main families.
+
+```{r isotype-family}
+db_heavy <- db_heavy %>%
+  mutate(isotype = case_when(
+    str_starts(c_call, "IGHM") ~ "IgM",
+    str_starts(c_call, "IGHD") ~ "IgD",
+    str_starts(c_call, "IGHG") ~ "IgG",
+    str_starts(c_call, "IGHA") ~ "IgA",
+    str_starts(c_call, "IGHE") ~ "IgE",
+    TRUE ~ "Unknown"
+  ))
+
+table(db_heavy$isotype)
+```
+
+### 3.2 Isotype distribution per patient
+
+```{r isotype-per-patient, fig.height=4}
+isotype_counts <- db_heavy %>%
+  filter(isotype != "Unknown")
+
+isotype_cols <- c(IgM = "#4575b4", IgD = "#91bfdb", IgG = "#d73027",
+                  IgA = "#fc8d59", IgE = "#fee090")
+
+ggplot(isotype_counts, aes(x = sample_id, fill = isotype)) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = isotype_cols) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Patient", y = "Proportion", fill = "Isotype",
+       title = "Isotype composition per patient") +
+  theme_bw(base_size = 13)
+```
+
+### 3.3 Subclass-level resolution
+
+```{r isotype-subclass, fig.height=4}
+subclass_counts <- db_heavy %>%
+  filter(!is.na(c_call), c_call != "")
+
+ggplot(subclass_counts, aes(x = sample_id, fill = c_call)) +
+  geom_bar(position = "fill") +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Patient", y = "Proportion", fill = "Subclass",
+       title = "Isotype subclass composition per patient") +
+  theme_bw(base_size = 13) +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+```
+
+### 3.4 Isotype composition by B cell group
+
+One advantage of single-cell data is the ability to link BCR properties to cell state annotations from the gene expression analysis.
+
+```{r isotype-by-group, fig.height=4}
+iso_group <- db_heavy %>%
+  filter(isotype != "Unknown")
+
+ggplot(iso_group, aes(x = bcell_group, fill = isotype)) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = isotype_cols) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "B cell group", y = "Proportion", fill = "Isotype",
+       title = "Isotype distribution per B cell population") +
+  theme_bw(base_size = 13)
+```
+
+> **Discussion:** Based on the isotype distribution, which B cell population has undergone the most class switching? Does this match your biological expectation?
+
+---
+
+**Exercise 2:** Plot the isotype subclass composition separately for IgG-positive cells within each B cell group. Are certain IgG subclasses enriched in particular populations?
+
+```{r ex2, class.source="exercise"}
+# Your code here
+# Hint: filter to IgG subclasses using str_starts(c_call, "IGHG"), then group by bcell_group
+```
+
+---
+
+## 4. V gene usage
+
+The V gene determines much of the antigen-binding surface shape. Examining V gene usage frequencies reveals biases in the pre-immune repertoire and potential antigen-driven selection.
+
+```{r vgene-usage, fig.height=5}
+# countGenes from alakazam calculates gene segment usage frequencies (independent of alleles)
+v_usage <- countGenes(db_heavy, gene = "v_call", groups = "sample_id",
+                      mode = "gene")
+
+# Top 15 most used V genes overall
+top_v <- v_usage %>%
+  group_by(gene) %>%
+  summarise(total = sum(seq_count), .groups = "drop") %>%
+  slice_max(total, n = 15) %>%
+  pull(gene)
+
+v_usage %>%
+  filter(gene %in% top_v) %>%
+  group_by(sample_id) %>%
+  dplyr::mutate(pct = 100 * seq_freq) %>%
+  ggplot(aes(x = reorder(gene, pct), y = pct, fill = sample_id)) +
+  geom_col(position = "dodge") +
+  coord_flip() +
+  labs(x = "V gene", y = "Usage (%)", fill = "Patient",
+       title = "Top 15 IGHV gene usage per patient")
+```
+
+---
+
+## 5. Clonal inference
+
+### 5.1 What is a clone?
+
+Two B cells belong to the same **clone** if they derived from the same ancestor B cell and therefore share:
+- The same V and J gene assignments
+- The same CDR3 length
+- Highly similar CDR3 sequences (allowing for SHM-introduced mutations)
+
+The standard approach (Immcantation) is hierarchical agglomerative clustering on CDR3 Hamming distances, with a threshold determined from the data.
+
+### 5.2 Estimate the clonal threshold
+
+`shazam::distToNearest()` computes, for each heavy chain sequence, the **nearest-neighbour distance** (normalised Hamming distance) to the most similar sequence *within the same V/J gene and CDR3 length group*.
+
+The resulting distance distribution typically shows two populations:
+- **Clonally related sequences** (within-clone): distances close to 0
+- **Unrelated sequences** (between clones): distances around 0.2–0.6
+
+The valley between these two populations is the optimal threshold.
+
+```{r dist-to-nearest, fig.height=4}
+# Use one patient for threshold estimation (computationally lighter)
+# Use cross = "sample_id" to also estimate between-donor (non-clonal) distances
+dist_nn <- distToNearest(
+  filter(db_heavy, !is.na(junction), nchar(junction) > 0),
+  cellIdColumn = "cell_id",
+  nproc = 1
+)
+
+ggplot(filter(dist_nn, !is.na(dist_nearest)),
+       aes(x = dist_nearest)) +
+  geom_histogram(binwidth = 0.02, fill = "steelblue", color = "white") +
+  geom_vline(xintercept = 0.2, linetype = "dashed", color = "red") +
+  scale_x_continuous(breaks = seq(0, 1, 0.1)) +
+  labs(x = "Nearest-neighbour Hamming distance",
+       y = "Count",
+       title = "CDR3 nearest-neighbour distance distribution")
+```
+
+### 5.3 Find the optimal threshold
+
+`shazam::findThreshold()` fits a mixture model to identify the threshold that separates within-clone from between-clone distances. The Gaussian-Gamma mixture model (`gamma-norm`) works well for typical BCR data.
+
+Using **cross-subject distances** (distances between sequences from different donors, which *cannot* be clonally related) as a negative control greatly improves threshold accuracy.
+
+```{r cross-dist}
+dist_cross <- distToNearest(
+  filter(db_heavy, !is.na(junction), nchar(junction) > 0),
+  nproc  = 1,
+  cross  = "sample_id",
+  cellIdColumn = "cell_id"
+)
+```
+
+```{r find-threshold, fig.height=5}
+threshold_result <- shazam::findThreshold(
+  dist_nn$dist_nearest
+)
+
+threshold_val <- threshold_result@threshold
+cat("Estimated clonal threshold:", round(threshold_val, 3), "\n")
+
+plot(threshold_result, binwidth = 0.02,
+     cross = dist_cross$cross_dist_nearest,
+     silent = TRUE) +
+  theme_bw(base_size = 13)
+```
+
+The dashed vertical line marks the chosen threshold. Sequences within a clone should have CDR3 distances below this value.
+
+### 5.4 Define clonal groups
+
+`scoper::hierarchicalClones()` performs the hierarchical clustering using the estimated threshold. Setting `fields = "sample_id"` ensures that clones are defined within each donor separately (cross-donor clones are biologically implausible).
+
+```{r define-clones}
+clones <- hierarchicalClones(
+  filter(db_heavy, !is.na(junction), nchar(junction) > 0),
+  cell_id   = "cell_id",
+  threshold = threshold_val,
+  only_heavy  = TRUE,
+  split_light = FALSE,
+  summarize_clones = FALSE,
+  fields = "sample_id"
+)
+
+cat("Sequences assigned to clones:", nrow(clones), "\n")
+cat("Unique clones:", n_distinct(clones$clone_id), "\n")
+```
+
+### 5.5 Clone size distribution
+
+```{r clone-size, fig.height=4}
+clone_sizes <- countClones(clones, groups = "sample_id")
+
+ggplot(clone_sizes, aes(x = seq_count)) +
+  geom_bar(fill = "steelblue") +
+  facet_wrap(~sample_id, scales = "free_y") +
+  scale_x_continuous(breaks = 1:15) +
+  scale_y_continuous(trans = "log1p") +
+  labs(x = "Number of sequences per clone", y = "Number of clones",
+       title = "Clone size distribution") +
+  theme_bw(base_size = 12)
+```
+
+> **Discussion:** What fraction of clones are singletons (size = 1)? What does this tell us about the depth of sampling and the extent of clonal expansion in these donors?
+
+---
+
+**Exercise 3:** Calculate the fraction of cells that belong to expanded clones (clone size ≥ 2) in each patient. How does this relate to the `bcell_group` composition?
+
+```{r ex3, class.source="exercise"}
+# Your code here
+
+```
+
+## 6. Somatic hypermutation
+
+### 6.1 Background
+
+Somatic hypermutation introduces mutations into V gene sequences during the germinal centre reaction. By comparing the observed sequence to the inferred germline (unmutated ancestor), we can estimate the mutation frequency — a proxy for the extent of affinity maturation.
+
+`shazam::observedMutations()` computes mutation frequencies by comparing `sequence_alignment` to `germline_alignment` within defined regions of the V gene.
+
+> **Note:** In this practical we use the germline sequences already present in the data (from IgBLAST). In a production analysis you would typically re-construct germlines using `dowser::createGermlines()` with IMGT reference databases, which performs D-region masking to avoid incorrectly counting D-segment nucleotides as V-gene mutations.
+
+### 6.2 Overall V-gene mutation frequency
+
+```{r shm-overall, fig.height=4}
+data_mut <- shazam::observedMutations(
+  clones,
+  sequenceColumn  = "sequence_alignment",
+  germlineColumn  = "germline_alignment",
+  regionDefinition = IMGT_V,
+  frequency = TRUE,
+  combine   = TRUE,
+  nproc     = 1
+)
+
+ggplot(data_mut, aes(x = mu_freq)) +
+  geom_histogram(binwidth = 0.005, fill = "steelblue", color = "white") +
+  labs(x = "V-gene mutation frequency", y = "Count",
+       title = "Distribution of V-gene somatic hypermutation frequency") +
+  theme_bw(base_size = 13)
+```
+
+### 6.3 SHM frequency by isotype
+
+IgM sequences should show little to no SHM (they have not undergone germinal centre reactions), while IgG and IgA should show higher mutation frequencies.
+
+```{r shm-isotype, fig.height=5}
+data_mut %>%
+ggplot(aes(x = isotype, y = mu_freq, fill = isotype)) +
+  geom_violin(alpha = 0.7, trim = TRUE) +
+  geom_boxplot(width = 0.12, outlier.shape = NA, fill = "white") +
+  labs(x = "Isotype", y = "V-gene mutation frequency",
+       title = "SHM frequency by isotype") +
+  theme_bw(base_size = 13) +
+  theme(legend.position = "none")
+```
+
+### 6.4 SHM frequency by B cell population
+
+```{r shm-bcell-group, fig.height=4}
+ggplot(filter(data_mut, !is.na(bcell_group)),
+       aes(x = bcell_group, y = mu_freq, fill = bcell_group)) +
+  geom_violin(alpha = 0.7, trim = TRUE) +
+  geom_boxplot(width = 0.12, outlier.shape = NA, fill = "white") +
+  labs(x = "B cell group", y = "V-gene mutation frequency",
+       title = "SHM frequency by B cell population") +
+  theme_bw(base_size = 13) +
+  theme(legend.position = "none")
+```
+
+> **Discussion:** Which B cell population shows the highest mutation frequencies? Does this fit the expected biology?
+
+### 6.5 CDR vs framework region mutation bias
+
+During affinity maturation, selection pressure concentrates mutations in the antigen-contacting CDR loops (CDR1, CDR2, CDR3) relative to the framework regions (FWR1–4). A high CDR:FWR mutation ratio is a signature of antigen-driven selection.
+
+```{r shm-regions, fig.height=5}
+# combine=FALSE keeps per-region columns (CDR1, CDR2, FWR1–3)
+# each split into replacement (_r) and silent (_s) mutation frequencies
+data_mut_reg <- shazam::observedMutations(
+  clones,
+  sequenceColumn   = "sequence_alignment",
+  germlineColumn   = "germline_alignment",
+  regionDefinition = IMGT_V_BY_REGIONS,
+  frequency = TRUE,
+  combine   = FALSE,
+  nproc     = 1
+)
+
+# Sum replacement mutation frequencies across all CDR / FWR columns
+cdr_cols <- grep("^mu_freq_cdr", names(data_mut_reg), value = TRUE)
+fwr_cols <- grep("^mu_freq_fwr", names(data_mut_reg), value = TRUE)
+
+data_mut_reg <- data_mut_reg %>%
+  mutate(
+    cdr_freq = rowSums(across(all_of(cdr_cols)), na.rm = TRUE),
+    fwr_freq = rowSums(across(all_of(fwr_cols)), na.rm = TRUE)
+  )
+
+data_mut_long <- data_mut_reg %>%
+  select(sequence_id, isotype, bcell_group, cdr_freq, fwr_freq) %>%
+  tidyr::pivot_longer(c(cdr_freq, fwr_freq),
+                      names_to = "region", values_to = "mu_freq") %>%
+  mutate(region = recode(region, cdr_freq = "CDR", fwr_freq = "FWR"))
+
+ggplot(data_mut_long, aes(x = isotype, y = mu_freq, fill = region)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.8) +
+  scale_fill_manual(values = c(CDR = "#e41a1c", FWR = "#377eb8")) +
+  labs(x = "Isotype", y = "Mutation frequency", fill = "Region",
+       title = "CDR vs. framework region mutation frequencies") +
+  theme_bw(base_size = 13)
+```
+
+---
+
+**Exercise 4:** Calculate the CDR:FWR mutation frequency ratio for each sequence and compare it between IgG and IgM B cells. Which isotype shows stronger evidence of antigen selection?
+
+```{r ex4, class.source="exercise"}
+# Your code here
+# Hint: use data_mut_reg which already has cdr_freq and fwr_freq columns
+# Calculate ratio: cdr_freq / (fwr_freq + 1e-9)  to avoid division by zero
+```
+
+---
+
+## 7. Linking BCR properties to GEX clusters
+
+A key advantage of single-cell data is the ability to overlay BCR properties onto the GEX-based UMAP embedding. Here we demonstrate this conceptually — in a full analysis you would load the Seurat or SingleCellExperiment object.
+
+### 7.1 SHM frequency per B cell subtype
+
+```{r shm-subtype, fig.height=5}
+data_mut %>%
+  group_by(bcell_subtype, isotype) %>%
+  ggplot(aes(x = bcell_subtype, y = mu_freq)) +
+  geom_violin(position = "dodge") +
+  coord_flip() +
+  labs(x = "B cell subtype", y = "V-gene mutation frequency",
+       title = "SHM by B cell subtype and isotype") +
+  theme_bw(base_size = 12)
+```
+
+### 7.2 Clonal sharing between B cell populations
+
+Are clones shared between B cell groups (e.g., does the same clone have naive and memory members)?
+
+```{r clonal-sharing, fig.height=4}
+clonal_groups <- clones %>%
+  filter(!is.na(clone_id), !is.na(bcell_group)) %>%
+  group_by(clone_id) %>%
+  summarise(
+    n_cells   = n(),
+    groups_present = paste(sort(unique(bcell_group)), collapse = "/"),
+    .groups = "drop"
+  ) %>%
+  count(groups_present, name = "n_clones") %>%
+  arrange(desc(n_clones))
+
+print(clonal_groups)
+```
+
+---
+
+## 8. Clonal lineage trees
+
+Phylogenetic trees of BCR sequences within a clone reveal the evolutionary history of affinity maturation — from the unmutated germinal centre founder to the most mutated descendants.
+
+### 8.1 Concept
+
+Within a clone, sequences are related by shared mutations. By building a maximum parsimony or maximum likelihood tree rooted at the inferred germline sequence, we can reconstruct the mutational trajectory of the clone.
+
+The **dowser** package provides:
+- `formatClones()`: prepare clone data for tree building
+- `getTrees()`: build phylogenetic trees (using phangorn/ML methods)
+- `plotTrees()`: visualise trees with trait annotations
+
+### 8.2 Germline reconstruction
+
+For robust tree building, the germline sequence need to be identical for all members of a clone to avoid alignment artefacts. This requires IMGT germline databases, which must be downloaded separately (not part of this practical):
+
+```{r}
+# Run only if IMGT references are available
+# references <- readIMGT(dir = "/path/to/imgt/human/vdj/")
+# clones_with_gl <- createGermlines(clones, references, fields = "sample_id")
+```
+
+For this practical we illustrate the tree-building workflow using the existing germline sequences. One important preparation step is described below.
+
+### 8.3 Build trees for selected clones
+
+`formatClones()` requires all sequences within a clone to carry the **same** germline sequence. IgBLAST assigns germlines independently to each sequence and can produce slightly different assignments within a clone. The proper solution is `createGermlines()`, which reconstructs a single consensus germline per clone using IMGT references. As a practical workaround when IMGT references are unavailable, we standardise by taking the most frequently assigned germline within each clone.
+
+```{r tree-prep, eval=FALSE}
+# Select well-represented clones (≥ 5 sequences) for tree building
+large_clones <- clones %>%
+  filter(!is.na(clone_id), !is.na(germline_alignment)) %>%
+  count(clone_id) %>%
+  filter(n >= 4) %>%
+  pull(clone_id)
+
+
+cat("Clones with ≥ 4 sequences:", length(large_clones), "\n")
+
+clones_tree_input <- clones %>%
+  filter(clone_id %in% large_clones,
+         !is.na(isotype),
+         !is.na(germline_alignment))
+
+# Standardise germlines within each clone (workaround needed because of missing germline reconstruction step with IMGT reference)
+# Better approach (not feasible in this tutorial: createGermlines(clones, references, fields = "sample_id")
+ clones_tree_input <- clones_tree_input %>%
+   group_by(clone_id) %>%
+   mutate(germline_alignment = {
+     tbl <- table(germline_alignment)
+     # use most common germline sequence
+     names(tbl)[which.max(tbl)]
+   }) %>%
+   ungroup()
+
+clone_objs <- formatClones(
+  clones_tree_input,
+  traits  = c("isotype", "bcell_group", "sample_id"),
+  minseq  = 4,
+  nproc   = 1,
+  germ    = "germline_alignment"
+)
+
+trees <- getTrees(clone_objs, build = "pml", nproc = 1)
+```
+
+### 8.4 Visualise trees
+
+```{r tree-plot, eval=FALSE}
+# Scale branches by number of mutations
+trees_scaled <- scaleBranches(trees, edge_type = "mutations")
+
+# Plot first few trees coloured by isotype
+plotTrees(trees_scaled,
+          tips     = "isotype",
+          tipsize  = "collapse_count")
+```
+
+### Further reading
+
+- [Immcantation documentation](https://immcantation.readthedocs.io)
+- [Gupta et al. (2015) — Change-O: toolkit for BCR repertoire analysis](https://doi.org/10.1093/bioinformatics/btv359)
+- [Heiden et al. (2018) — AIRR community MiAIRR standards](https://doi.org/10.3389/fimmu.2017.01102)
+- [Kleinstein lab tutorials](https://kleinstein.bitbucket.io/tutorials/)
+
+---
+
+```{r session-info}
+sessionInfo()
+```

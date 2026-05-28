@@ -65,7 +65,7 @@ website:
 #            text: R for Mass Spectrometry
 #          - href: lab/8_metab/Metabonaut.qmd
 #            text: End-to-end Metabolomics workflow
-#          - href: lab/9_multi/9_multi.html
+#          - href: lab/9_multi/multicond-scRNA-lemur-CSAMA2026.html
 #            text: Multi-condition single cell RNA-seq differential analysis
           - href: lab/10_Tidyomics.qmd
             text: Intro to Tidyomics tidy data analysis applied to omics data
@@ -78,8 +78,8 @@ website:
 #          - href: lab/14_Image.qmd
 #            text: Working with Image Data
 #          - href: lab/15_SpatialData/15_SpatialData.qmd
-#            text: Analysis with SpatialData
-#          - href: lab/16_immune/16_immune.qmd
+#            text: Spatial Transcriptomics
+#          - href: lab/16_immune/BCR_analysis.Rmd
 #            text: Adaptive immune receptor repertoires
           - href: lab/17_multivariate_pca/multivariate-pca.html
             text: Multivariate Analysis and PCA
