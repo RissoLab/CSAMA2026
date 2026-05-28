@@ -73,6 +73,7 @@
 | 11:15-12:00                               | **Lecture:** Spatial transcriptomics: from images to counts                                                                                                     |
 | 12:00-12:30                               | **Discussion in the garden**
 | 12:30-14:00                               | *\~\~\~ Lunch break \~\~\~*                                                                                                                  |
+| 14:00-15:30                               | **Lab:** R package development                                                                                                             |
 | 14:00-15:30                               | **Lab:** Proteomics                                                                                           |
 | 14:00-15:30                               |  **Lab:** End-to-end Metabolomics workflow |
 | 14:00-15:30                               | **Lab:** Multi-condition single cell RNA-seq differential analysis                                                                           |
