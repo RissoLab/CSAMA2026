@@ -1,8 +1,0 @@
----
-title: "R package development"
-format: html
----
-
-## 🔗 Open the Lab File  
-[Click here to access the lab](https://csoneson.github.io/PackagingLecture2025/packaging-code.html)
-
