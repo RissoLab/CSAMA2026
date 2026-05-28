@@ -19,8 +19,8 @@ Welcome to Day 4! Below you'll find the lectures and materials to explore. Click
 
 ## 📘 Introduction to spatial omics {#Spatial}
 
-🔗 [Open slides](https://drive.google.com/file/d/1uoz0XCUBf4Vn1UGmfgS_P3qERmF7XZuA/view?usp=sharing) by Helena Crowell
+🔗 Materials coming soon by Helena Crowell
 
 ## 📘  Spatial transcriptomics: from images to counts
 
-🔗 [Open slides](https://drive.google.com/file/d/1SYlLnHgvcTOntOLD6nkIk9VoPKnGuljU/view?usp=sharing) by Daria Lazic
+🔗 Materials coming soon by Daria Lazic
