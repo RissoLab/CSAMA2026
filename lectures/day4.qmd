@@ -13,9 +13,9 @@ Welcome to Day 4! Below you'll find the lectures and materials to explore. Click
 🔗 [Open slides](https://lgatto.codeberg.page/pub/csama-2026/#1) by Laurent Gatto
 
 
-## 📘 Mass spectrometry-based metabolomics {#metabolomics} by Johannes Rainer
+## 📘 Mass spectrometry-based metabolomics {#metabolomics} 
 
-🔗 [Open slides](metabolomics-overview.html)
+🔗 [Open slides](metabolomics-overview.html) by Johannes Rainer
 
 ## 📘 Introduction to spatial omics {#Spatial}
 

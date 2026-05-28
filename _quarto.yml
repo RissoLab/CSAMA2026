@@ -83,6 +83,8 @@ website:
 #            text: Adaptive immune receptor repertoires
           - href: lab/17_multivariate_pca/multivariate-pca.html
             text: Multivariate Analysis and PCA
+          - href: lab/18_R_pkg_dev/R_pkg_dev.qmd
+            text: R package development
 
       - href: registration.qmd
         text: Registration
