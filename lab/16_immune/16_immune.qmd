@@ -4,4 +4,4 @@ format: html
 ---
 
 ## 🔗 Open the Lab File  
-[Click here to access the lab](https://ADD_LINK)
+[Click here to access the lab](https://github.com/AGImkeller/CSAMA2026/blob/main/lab/BCR_analysis.Rmd)

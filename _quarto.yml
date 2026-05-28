@@ -79,7 +79,7 @@ website:
 #            text: Working with Image Data
           - href: lab/15_SpatialData/15_SpatialData.qmd
             text: Spatial Transcriptomics
-          - href: lab/16_immune/BCR_analysis.Rmd
+          - href: lab/16_immune/16_immune.qmd
             text: Adaptive immune receptor repertoires
           - href: lab/17_multivariate_pca/multivariate-pca.html
             text: Multivariate Analysis and PCA
