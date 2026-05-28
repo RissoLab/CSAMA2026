@@ -61,12 +61,12 @@ website:
             text: ScRNA-seq Annotation
 #          - href: lab/6_bulk-atacseq/fluent-genomics-v2.html
 #            text: Bulk ATAC-seq analysis
-#          - href: lab/7_prot/proteom.qmd
-#            text: R for Mass Spectrometry
-#          - href: lab/8_metab/Metabonaut.qmd
-#            text: End-to-end Metabolomics workflow
-#          - href: lab/9_multi/multicond-scRNA-lemur-CSAMA2026.html
-#            text: Multi-condition single cell RNA-seq differential analysis
+          - href: lab/7_prot/proteom.qmd
+            text: R for Mass Spectrometry
+          - href: lab/8_metab/Metabonaut.qmd
+            text: End-to-end Metabolomics workflow
+          - href: lab/9_multi/multicond-scRNA-lemur-CSAMA2026.html
+            text: Multi-condition single cell RNA-seq differential analysis
           - href: lab/10_Tidyomics.qmd
             text: Intro to Tidyomics tidy data analysis applied to omics data
 #          - href: lab/11_spatial/spatial.qmd
@@ -77,10 +77,10 @@ website:
             text: Interactive exploration with iSEE
 #          - href: lab/14_Image.qmd
 #            text: Working with Image Data
-#          - href: lab/15_SpatialData/15_SpatialData.qmd
-#            text: Spatial Transcriptomics
-#          - href: lab/16_immune/BCR_analysis.Rmd
-#            text: Adaptive immune receptor repertoires
+          - href: lab/15_SpatialData/15_SpatialData.qmd
+            text: Spatial Transcriptomics
+          - href: lab/16_immune/BCR_analysis.Rmd
+            text: Adaptive immune receptor repertoires
           - href: lab/17_multivariate_pca/multivariate-pca.html
             text: Multivariate Analysis and PCA
           - href: lab/18_R_pkg_dev/R_pkg_dev.qmd
