@@ -23,4 +23,4 @@ Welcome to Day 5! Below you'll find the lectures and materials to explore. Click
 
 ## 📘 Bioconductor advanced topics: LLMs, agents, coding helpers {#AI_2}
 
-Materials coming soon by Vince Carey
+🔗 [Open slides](BioconductorAndAIforCSAMA2026.pdf) by Vince Carey
