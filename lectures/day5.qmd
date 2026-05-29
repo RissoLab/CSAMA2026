@@ -15,7 +15,7 @@ Welcome to Day 5! Below you'll find the lectures and materials to explore. Click
 
 ## 📘 Machine learning and AI {#ML}
 
-Materials coming soon by Davide Risso
+🔗 [Open slides](Machine_Learning_and_Artificial_Intelligence.pdf) by Davide Risso
 
 ## 📘 Deep learning for digital pathology {#AI_1}
 
