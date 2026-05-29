@@ -41,8 +41,8 @@ website:
             text: Day 3
           - href: lectures/day4.qmd
             text: Day 4
-#          - href: lectures/day5.qmd
-#            text: Day 5
+          - href: lectures/day5.qmd
+            text: Day 5
 #          - href: lectures/links.qmd
 #            text: Useful resources
       - text: Labs
